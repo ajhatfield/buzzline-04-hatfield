@@ -146,7 +146,7 @@ def process_message(message: str) -> None:
         # Ensure it's a dictionary before accessing fields
         if isinstance(message_dict, dict):
             # Extract the 'author' field from the Python dictionary
-            topic = message_dict.get("topic", "unknown")
+            topic = message_dict.get("category", "unknown")
             logger.info(f"Message received from author: {topic}")
 
             # Increment the count for the author
