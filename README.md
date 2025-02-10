@@ -66,7 +66,7 @@ Windows:
 
 ```shell
 .venv\Scripts\activate
-py -m producers.basic_json_producer_case
+py -m producers.csv_producer_case
 ```
 
 Mac/Linux:
@@ -85,7 +85,7 @@ Use the commands below to activate .venv, and start the consumer.
 Windows:
 ```shell
 .venv\Scripts\activate
-py -m consumers.basic_json_consumer_case
+py -m consumers.csv_consumer_hatfield
 ```
 
 Mac/Linux:
