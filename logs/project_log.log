@@ -1552,3 +1552,793 @@
 2025-02-09 14:12:02.473 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-09T22:12:02.473627', 'temperature': 142.0}
 2025-02-09 14:12:07.479 | INFO     | __main__:main:174 - Kafka producer closed.
 2025-02-09 14:12:07.479 | INFO     | __main__:main:176 - END producer.
+2025-02-09 21:09:17.775 | INFO     | utils.utils_logger:<module>:38 - Logging to file: logs\project_log.log
+2025-02-09 21:09:17.775 | INFO     | __main__:<module>:66 - Project root: C:\Users\Owner\Desktop\buzzline-04-hatfield
+2025-02-09 21:09:17.775 | INFO     | __main__:<module>:70 - Data folder: C:\Users\Owner\Desktop\buzzline-04-hatfield\data
+2025-02-09 21:09:17.775 | INFO     | __main__:<module>:74 - Data file: C:\Users\Owner\Desktop\buzzline-04-hatfield\data\smoker_temps.csv
+2025-02-09 21:09:17.775 | INFO     | __main__:main:133 - START producer.
+2025-02-09 21:09:17.775 | INFO     | utils.utils_producer:get_zookeeper_address:57 - Zookeeper address: localhost:2181
+2025-02-09 21:09:17.801 | INFO     | utils.utils_producer:check_zookeeper_service_is_ready:79 - Zookeeper is ready at localhost:2181.
+2025-02-09 21:09:17.801 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-02-09 21:09:18.147 | INFO     | utils.utils_producer:check_kafka_service_is_ready:98 - Kafka is ready. Brokers: {'throttle_time_ms': 0, 'brokers': [{'node_id': 0, 'host': 'localhost', 'port': 9092, 'rack': None}], 'cluster_id': 'FZPR85AaRU2t79a5WAc9Lw', 'controller_id': 0}
+2025-02-09 21:09:18.147 | INFO     | __main__:get_kafka_topic:48 - Kafka topic: smoker_csv
+2025-02-09 21:09:18.147 | INFO     | __main__:get_message_interval:55 - Message interval: 5 seconds
+2025-02-09 21:09:18.163 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-02-09 21:09:18.166 | INFO     | utils.utils_producer:create_kafka_producer:146 - Connecting to Kafka broker at localhost:9092...
+2025-02-09 21:09:18.277 | INFO     | utils.utils_producer:create_kafka_producer:151 - Kafka producer successfully created.
+2025-02-09 21:09:18.277 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-02-09 21:09:18.629 | INFO     | utils.utils_producer:create_kafka_topic:172 - Topic 'smoker_csv' already exists. Clearing it out...
+2025-02-09 21:09:18.629 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-02-09 21:09:18.999 | ERROR    | utils.utils_producer:clear_kafka_topic:235 - Error managing retention for topic 'smoker_csv': list indices must be integers or slices, not ConfigResource
+2025-02-09 21:09:19.000 | INFO     | __main__:main:156 - Kafka topic 'smoker_csv' is ready.
+2025-02-09 21:09:19.000 | INFO     | __main__:main:162 - Starting message production to topic 'smoker_csv'...
+2025-02-09 21:09:19.000 | INFO     | __main__:generate_messages:92 - Opening data file in read mode: C:\Users\Owner\Desktop\buzzline-04-hatfield\data\smoker_temps.csv
+2025-02-09 21:09:19.008 | INFO     | __main__:generate_messages:94 - Reading data from file: C:\Users\Owner\Desktop\buzzline-04-hatfield\data\smoker_temps.csv
+2025-02-09 21:09:19.014 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:09:19.011486', 'temperature': 70.4}
+2025-02-09 21:09:24.020 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:09:24.020313', 'temperature': 70.8}
+2025-02-09 21:09:29.023 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:09:29.023394', 'temperature': 71.2}
+2025-02-09 21:09:34.026 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:09:34.026975', 'temperature': 71.6}
+2025-02-09 21:09:39.041 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:09:39.041150', 'temperature': 72.0}
+2025-02-09 21:09:44.048 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:09:44.046658', 'temperature': 72.4}
+2025-02-09 21:09:46.618 | INFO     | utils.utils_logger:<module>:38 - Logging to file: logs\project_log.log
+2025-02-09 21:09:46.926 | INFO     | __main__:main:277 - START consumer.
+2025-02-09 21:09:46.926 | INFO     | __main__:get_kafka_topic:51 - Kafka topic: smoker_csv
+2025-02-09 21:09:46.926 | INFO     | __main__:get_kafka_consumer_group_id:58 - Kafka consumer group id: smoker_group
+2025-02-09 21:09:46.926 | INFO     | __main__:get_rolling_window_size:71 - Rolling window size: 10
+2025-02-09 21:09:46.926 | INFO     | __main__:main:287 - Consumer: Topic 'smoker_csv' and group 'smoker_group'...
+2025-02-09 21:09:46.926 | INFO     | __main__:main:288 - Rolling window size: 10
+2025-02-09 21:09:46.926 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-02-09 21:09:46.926 | INFO     | utils.utils_consumer:create_kafka_consumer:44 - Creating Kafka consumer. Topic='smoker_csv' and group ID='smoker_group'.
+2025-02-09 21:09:47.046 | INFO     | utils.utils_consumer:create_kafka_consumer:59 - Kafka consumer created successfully.
+2025-02-09 21:09:47.054 | INFO     | __main__:main:295 - Polling messages from topic 'smoker_csv'...
+2025-02-09 21:09:47.221 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:51:16.284632', 'temperature': 106.0}
+2025-02-09 21:09:47.463 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:51:21.292022', 'temperature': 106.4}
+2025-02-09 21:09:47.587 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:51:26.295495', 'temperature': 106.8}
+2025-02-09 21:09:47.720 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:51:31.298072', 'temperature': 107.2}
+2025-02-09 21:09:47.836 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:51:36.305359', 'temperature': 107.6}
+2025-02-09 21:09:47.978 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:51:41.312396', 'temperature': 108.0}
+2025-02-09 21:09:48.111 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:52:05.811470', 'temperature': 70.4}
+2025-02-09 21:09:48.252 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:52:10.818506', 'temperature': 70.8}
+2025-02-09 21:09:48.393 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:52:15.823885', 'temperature': 71.2}
+2025-02-09 21:09:48.535 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:52:20.830162', 'temperature': 71.6}
+2025-02-09 21:09:48.677 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:52:25.835616', 'temperature': 72.0}
+2025-02-09 21:09:48.820 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:52:30.841581', 'temperature': 72.4}
+2025-02-09 21:09:48.983 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:52:35.848670', 'temperature': 72.8}
+2025-02-09 21:09:49.052 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:09:49.052875', 'temperature': 72.8}
+2025-02-09 21:09:49.151 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:52:40.858319', 'temperature': 73.2}
+2025-02-09 21:09:49.320 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:52:45.864682', 'temperature': 73.6}
+2025-02-09 21:09:49.485 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:52:50.870718', 'temperature': 74.0}
+2025-02-09 21:09:49.683 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:52:55.874798', 'temperature': 74.4}
+2025-02-09 21:09:49.954 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:53:00.894915', 'temperature': 74.8}
+2025-02-09 21:09:50.116 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:53:05.900757', 'temperature': 75.2}
+2025-02-09 21:09:50.329 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:53:10.907012', 'temperature': 75.6}
+2025-02-09 21:09:50.530 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:53:15.911240', 'temperature': 76.0}
+2025-02-09 21:09:50.745 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:53:20.921585', 'temperature': 76.4}
+2025-02-09 21:09:50.967 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:53:25.926233', 'temperature': 76.8}
+2025-02-09 21:09:51.180 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:53:30.928943', 'temperature': 77.2}
+2025-02-09 21:09:51.413 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:53:35.935303', 'temperature': 77.6}
+2025-02-09 21:09:51.633 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:53:40.938461', 'temperature': 78.0}
+2025-02-09 21:09:51.854 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:53:45.945875', 'temperature': 78.4}
+2025-02-09 21:09:52.070 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:53:50.951997', 'temperature': 78.8}
+2025-02-09 21:09:52.230 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:53:55.956053', 'temperature': 79.2}
+2025-02-09 21:09:52.602 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:54:00.962961', 'temperature': 79.6}
+2025-02-09 21:09:52.696 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:54:05.972555', 'temperature': 80.0}
+2025-02-09 21:09:52.788 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:54:10.979569', 'temperature': 80.4}
+2025-02-09 21:09:52.871 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:54:15.981983', 'temperature': 80.8}
+2025-02-09 21:09:52.955 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:54:20.985987', 'temperature': 81.2}
+2025-02-09 21:09:53.080 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:54:25.993135', 'temperature': 81.6}
+2025-02-09 21:09:53.163 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:54:31.000675', 'temperature': 82.0}
+2025-02-09 21:09:53.247 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:54:36.007276', 'temperature': 82.4}
+2025-02-09 21:09:53.330 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:54:41.015650', 'temperature': 82.8}
+2025-02-09 21:09:53.415 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:54:46.025923', 'temperature': 83.2}
+2025-02-09 21:09:53.514 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:54:51.030703', 'temperature': 83.6}
+2025-02-09 21:09:53.598 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:54:56.036834', 'temperature': 84.0}
+2025-02-09 21:09:53.697 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:55:01.045551', 'temperature': 84.4}
+2025-02-09 21:09:53.796 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:55:06.054650', 'temperature': 84.8}
+2025-02-09 21:09:53.896 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:55:11.060554', 'temperature': 85.2}
+2025-02-09 21:09:54.024 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:55:16.065461', 'temperature': 85.6}
+2025-02-09 21:09:54.081 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:09:54.064037', 'temperature': 73.2}
+2025-02-09 21:09:54.446 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:55:21.071332', 'temperature': 86.0}
+2025-02-09 21:09:54.547 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:55:26.081096', 'temperature': 86.4}
+2025-02-09 21:09:54.663 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:55:31.093018', 'temperature': 86.8}
+2025-02-09 21:09:54.766 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:55:36.099709', 'temperature': 87.2}
+2025-02-09 21:09:54.897 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:55:41.106326', 'temperature': 87.6}
+2025-02-09 21:09:55.014 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:55:46.112408', 'temperature': 88.0}
+2025-02-09 21:09:55.132 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:55:51.122732', 'temperature': 88.4}
+2025-02-09 21:09:55.239 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:55:56.129723', 'temperature': 88.8}
+2025-02-09 21:09:55.355 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:56:01.137584', 'temperature': 89.2}
+2025-02-09 21:09:55.462 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:56:06.146434', 'temperature': 89.6}
+2025-02-09 21:09:55.583 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:56:11.153293', 'temperature': 90.0}
+2025-02-09 21:09:55.696 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:56:16.159597', 'temperature': 90.4}
+2025-02-09 21:09:55.829 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:56:21.167163', 'temperature': 90.8}
+2025-02-09 21:09:55.937 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:56:26.172074', 'temperature': 91.2}
+2025-02-09 21:09:56.061 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:56:31.177582', 'temperature': 91.6}
+2025-02-09 21:09:56.214 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:56:36.188196', 'temperature': 92.0}
+2025-02-09 21:09:56.345 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:56:41.192678', 'temperature': 92.4}
+2025-02-09 21:09:56.470 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:56:46.198742', 'temperature': 92.8}
+2025-02-09 21:09:56.663 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:56:51.205433', 'temperature': 93.2}
+2025-02-09 21:09:56.830 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:56:56.213563', 'temperature': 93.6}
+2025-02-09 21:09:56.934 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:57:01.222731', 'temperature': 94.0}
+2025-02-09 21:09:57.066 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:57:06.230000', 'temperature': 94.4}
+2025-02-09 21:09:57.172 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:57:11.240814', 'temperature': 94.8}
+2025-02-09 21:09:57.288 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:57:16.247128', 'temperature': 95.2}
+2025-02-09 21:09:57.404 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:57:21.253873', 'temperature': 95.6}
+2025-02-09 21:09:57.567 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:57:26.263394', 'temperature': 96.0}
+2025-02-09 21:09:57.696 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:57:31.272928', 'temperature': 96.4}
+2025-02-09 21:09:57.829 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:57:36.282169', 'temperature': 96.8}
+2025-02-09 21:09:57.956 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:57:41.288521', 'temperature': 97.2}
+2025-02-09 21:09:58.243 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:57:46.296867', 'temperature': 97.6}
+2025-02-09 21:09:58.438 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:57:51.303982', 'temperature': 98.0}
+2025-02-09 21:09:59.094 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:09:59.094825', 'temperature': 73.6}
+2025-02-09 21:10:04.099 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:10:04.099706', 'temperature': 74.0}
+2025-02-09 21:10:09.104 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:10:09.104398', 'temperature': 74.4}
+2025-02-09 21:10:14.127 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:10:14.127261', 'temperature': 74.8}
+2025-02-09 21:10:19.131 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:10:19.131581', 'temperature': 75.2}
+2025-02-09 21:10:24.143 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:10:24.143690', 'temperature': 75.6}
+2025-02-09 21:10:29.151 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:10:29.151215', 'temperature': 76.0}
+2025-02-09 21:10:34.157 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:10:34.157008', 'temperature': 76.4}
+2025-02-09 21:10:39.161 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:10:39.161577', 'temperature': 76.8}
+2025-02-09 21:10:44.167 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:10:44.167539', 'temperature': 77.2}
+2025-02-09 21:10:49.180 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:10:49.180905', 'temperature': 77.6}
+2025-02-09 21:10:54.185 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:10:54.185779', 'temperature': 78.0}
+2025-02-09 21:10:59.190 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:10:59.190307', 'temperature': 78.4}
+2025-02-09 21:11:04.196 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:11:04.196419', 'temperature': 78.8}
+2025-02-09 21:11:09.210 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:11:09.202498', 'temperature': 79.2}
+2025-02-09 21:11:14.215 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:11:14.215256', 'temperature': 79.6}
+2025-02-09 21:11:19.230 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:11:19.230538', 'temperature': 80.0}
+2025-02-09 21:11:24.239 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:11:24.239816', 'temperature': 80.4}
+2025-02-09 21:11:29.249 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:11:29.245680', 'temperature': 80.8}
+2025-02-09 21:11:34.263 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:11:34.255499', 'temperature': 81.2}
+2025-02-09 21:11:39.285 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:11:39.284614', 'temperature': 81.6}
+2025-02-09 21:11:44.291 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:11:44.291021', 'temperature': 82.0}
+2025-02-09 21:11:49.302 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:11:49.302295', 'temperature': 82.4}
+2025-02-09 21:11:54.318 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:11:54.317531', 'temperature': 82.8}
+2025-02-09 21:11:59.321 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:11:59.321437', 'temperature': 83.2}
+2025-02-09 21:12:04.326 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:12:04.326572', 'temperature': 83.6}
+2025-02-09 21:12:09.348 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:12:09.330626', 'temperature': 84.0}
+2025-02-09 21:12:14.360 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:12:14.360345', 'temperature': 84.4}
+2025-02-09 21:12:19.365 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:12:19.365231', 'temperature': 84.8}
+2025-02-09 21:12:24.368 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:12:24.368643', 'temperature': 85.2}
+2025-02-09 21:12:29.372 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:12:29.372210', 'temperature': 85.6}
+2025-02-09 21:12:34.405 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:12:34.389619', 'temperature': 86.0}
+2025-02-09 21:12:39.437 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:12:39.437070', 'temperature': 86.4}
+2025-02-09 21:12:44.450 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:12:44.450883', 'temperature': 86.8}
+2025-02-09 21:12:49.485 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:12:49.465360', 'temperature': 87.2}
+2025-02-09 21:12:54.681 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:12:54.539979', 'temperature': 87.6}
+2025-02-09 21:12:59.718 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:12:59.707585', 'temperature': 88.0}
+2025-02-09 21:13:04.860 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:13:04.783746', 'temperature': 88.4}
+2025-02-09 21:13:10.186 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:13:09.961584', 'temperature': 88.8}
+2025-02-09 21:13:15.370 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:13:15.205253', 'temperature': 89.2}
+2025-02-09 21:13:20.410 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:13:20.389402', 'temperature': 89.6}
+2025-02-09 21:13:25.481 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:13:25.461524', 'temperature': 90.0}
+2025-02-09 21:13:30.521 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:13:30.509201', 'temperature': 90.4}
+2025-02-09 21:13:35.549 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:13:35.533643', 'temperature': 90.8}
+2025-02-09 21:13:40.581 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:13:40.581267', 'temperature': 91.2}
+2025-02-09 21:13:45.718 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:13:45.607545', 'temperature': 91.6}
+2025-02-09 21:13:50.835 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:13:50.786421', 'temperature': 92.0}
+2025-02-09 21:13:56.059 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:13:56.008456', 'temperature': 92.4}
+2025-02-09 21:14:01.083 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:14:01.067463', 'temperature': 92.8}
+2025-02-09 21:14:06.144 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:14:06.116961', 'temperature': 93.2}
+2025-02-09 21:14:11.202 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:14:11.164270', 'temperature': 93.6}
+2025-02-09 21:14:16.316 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:14:16.284929', 'temperature': 94.0}
+2025-02-09 21:14:21.519 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:14:21.397751', 'temperature': 94.4}
+2025-02-09 21:14:26.715 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:14:26.652582', 'temperature': 94.8}
+2025-02-09 21:14:31.915 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:14:31.890964', 'temperature': 95.2}
+2025-02-09 21:14:37.203 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:14:37.118088', 'temperature': 95.6}
+2025-02-09 21:14:43.048 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:14:42.606536', 'temperature': 96.0}
+2025-02-09 21:14:48.667 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:14:48.283308', 'temperature': 96.4}
+2025-02-09 21:14:53.897 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:14:53.817294', 'temperature': 96.8}
+2025-02-09 21:14:59.004 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:14:58.943127', 'temperature': 97.2}
+2025-02-09 21:15:04.152 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:15:04.080708', 'temperature': 97.6}
+2025-02-09 21:15:09.199 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:15:09.176210', 'temperature': 98.0}
+2025-02-09 21:15:14.303 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:15:14.250942', 'temperature': 98.4}
+2025-02-09 21:15:19.382 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:15:19.333227', 'temperature': 98.8}
+2025-02-09 21:16:04.710 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:16:04.705223', 'temperature': 99.2}
+2025-02-09 21:16:09.713 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:16:09.713155', 'temperature': 99.6}
+2025-02-09 21:16:14.716 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:16:14.716581', 'temperature': 100.0}
+2025-02-09 21:16:19.719 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:16:19.719979', 'temperature': 100.4}
+2025-02-09 21:16:24.722 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:16:24.722495', 'temperature': 100.8}
+2025-02-09 21:16:29.728 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:16:29.726514', 'temperature': 101.2}
+2025-02-09 21:16:34.730 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:16:34.729514', 'temperature': 101.6}
+2025-02-09 21:16:39.733 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:16:39.732106', 'temperature': 102.0}
+2025-02-09 21:16:44.735 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:16:44.735203', 'temperature': 102.4}
+2025-02-09 21:16:49.739 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:16:49.738112', 'temperature': 102.8}
+2025-02-09 21:16:54.742 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:16:54.741321', 'temperature': 103.2}
+2025-02-09 21:16:59.746 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:16:59.744874', 'temperature': 103.6}
+2025-02-09 21:17:04.750 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:17:04.748914', 'temperature': 104.0}
+2025-02-09 21:17:09.751 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:17:09.751797', 'temperature': 104.4}
+2025-02-09 21:17:14.754 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:17:14.754998', 'temperature': 104.8}
+2025-02-09 21:17:19.758 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:17:19.758154', 'temperature': 105.2}
+2025-02-09 21:17:24.763 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:17:24.762552', 'temperature': 105.6}
+2025-02-09 21:17:29.766 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:17:29.766220', 'temperature': 106.0}
+2025-02-09 21:17:34.769 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:17:34.769018', 'temperature': 106.4}
+2025-02-09 21:17:39.772 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:17:39.772555', 'temperature': 106.8}
+2025-02-09 21:17:44.775 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:17:44.775804', 'temperature': 107.2}
+2025-02-09 21:17:49.779 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:17:49.779727', 'temperature': 107.6}
+2025-02-09 21:17:54.784 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:17:54.784173', 'temperature': 108.0}
+2025-02-09 21:17:59.791 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:17:59.791498', 'temperature': 108.4}
+2025-02-09 21:18:04.795 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:18:04.794683', 'temperature': 108.8}
+2025-02-09 21:18:09.798 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:18:09.797619', 'temperature': 109.2}
+2025-02-09 21:18:14.802 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:18:14.800611', 'temperature': 109.6}
+2025-02-09 21:18:19.815 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:18:19.815806', 'temperature': 110.0}
+2025-02-09 21:18:24.833 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:18:24.833479', 'temperature': 110.4}
+2025-02-09 21:18:29.838 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:18:29.838698', 'temperature': 110.8}
+2025-02-09 21:18:34.848 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:18:34.848208', 'temperature': 111.2}
+2025-02-09 21:18:39.852 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:18:39.851909', 'temperature': 111.6}
+2025-02-09 21:18:44.855 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:18:44.855432', 'temperature': 112.0}
+2025-02-09 21:18:49.869 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:18:49.869165', 'temperature': 112.4}
+2025-02-09 21:18:54.882 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:18:54.880281', 'temperature': 112.8}
+2025-02-09 21:18:59.886 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:18:59.884445', 'temperature': 113.2}
+2025-02-09 21:19:04.890 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:19:04.890113', 'temperature': 113.6}
+2025-02-09 21:19:09.894 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:19:09.894540', 'temperature': 114.0}
+2025-02-09 21:19:14.899 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:19:14.898248', 'temperature': 114.4}
+2025-02-09 21:19:19.901 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:19:19.901332', 'temperature': 114.8}
+2025-02-09 21:19:24.914 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:19:24.912105', 'temperature': 115.2}
+2025-02-09 21:19:29.917 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:19:29.916340', 'temperature': 115.6}
+2025-02-09 21:19:34.922 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:19:34.922082', 'temperature': 116.0}
+2025-02-09 21:19:39.926 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:19:39.926985', 'temperature': 116.4}
+2025-02-09 21:19:44.933 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:19:44.933757', 'temperature': 116.8}
+2025-02-09 21:19:49.937 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:19:49.937718', 'temperature': 117.2}
+2025-02-09 21:19:54.941 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:19:54.941698', 'temperature': 117.6}
+2025-02-09 21:19:59.947 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:19:59.947486', 'temperature': 118.0}
+2025-02-09 21:20:04.951 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:20:04.951901', 'temperature': 118.4}
+2025-02-09 21:20:09.955 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:20:09.955400', 'temperature': 118.8}
+2025-02-09 21:20:14.961 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:20:14.961981', 'temperature': 119.2}
+2025-02-09 21:20:19.967 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:20:19.967006', 'temperature': 119.6}
+2025-02-09 21:20:24.974 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:20:24.974793', 'temperature': 120.0}
+2025-02-09 21:20:29.979 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:20:29.978631', 'temperature': 120.4}
+2025-02-09 21:20:34.982 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:20:34.982534', 'temperature': 120.8}
+2025-02-09 21:20:39.985 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:20:39.985967', 'temperature': 121.2}
+2025-02-09 21:20:44.992 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:20:44.992026', 'temperature': 121.6}
+2025-02-09 21:20:49.996 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:20:49.996712', 'temperature': 122.0}
+2025-02-09 21:20:55.000 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:20:55.000588', 'temperature': 122.4}
+2025-02-09 21:21:00.006 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:21:00.006149', 'temperature': 122.8}
+2025-02-09 21:21:05.011 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:21:05.011828', 'temperature': 123.2}
+2025-02-09 21:21:10.018 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:21:10.018105', 'temperature': 123.6}
+2025-02-09 21:21:15.021 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:21:15.021556', 'temperature': 124.0}
+2025-02-09 21:21:20.028 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:21:20.028358', 'temperature': 124.4}
+2025-02-09 21:21:25.032 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:21:25.032005', 'temperature': 124.8}
+2025-02-09 21:21:30.035 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:21:30.035049', 'temperature': 125.2}
+2025-02-09 21:21:35.041 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:21:35.041325', 'temperature': 125.6}
+2025-02-09 21:21:40.045 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:21:40.045085', 'temperature': 126.0}
+2025-02-09 21:21:45.052 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:21:45.049128', 'temperature': 126.4}
+2025-02-09 21:21:50.054 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:21:50.054945', 'temperature': 126.8}
+2025-02-09 21:21:55.059 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:21:55.059022', 'temperature': 127.2}
+2025-02-09 21:21:55.756 | INFO     | utils.utils_logger:<module>:38 - Logging to file: logs\project_log.log
+2025-02-09 21:21:57.716 | INFO     | __main__:main:277 - START consumer.
+2025-02-09 21:21:57.717 | INFO     | __main__:get_kafka_topic:51 - Kafka topic: smoker_csv
+2025-02-09 21:21:57.717 | INFO     | __main__:get_kafka_consumer_group_id:58 - Kafka consumer group id: smoker_group
+2025-02-09 21:21:57.718 | INFO     | __main__:get_rolling_window_size:71 - Rolling window size: 10
+2025-02-09 21:21:57.718 | INFO     | __main__:main:287 - Consumer: Topic 'smoker_csv' and group 'smoker_group'...
+2025-02-09 21:21:57.719 | INFO     | __main__:main:288 - Rolling window size: 10
+2025-02-09 21:21:57.719 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-02-09 21:21:57.720 | INFO     | utils.utils_consumer:create_kafka_consumer:44 - Creating Kafka consumer. Topic='smoker_csv' and group ID='smoker_group'.
+2025-02-09 21:21:57.838 | INFO     | utils.utils_consumer:create_kafka_consumer:59 - Kafka consumer created successfully.
+2025-02-09 21:21:57.838 | INFO     | __main__:main:295 - Polling messages from topic 'smoker_csv'...
+2025-02-09 21:21:58.025 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:51:16.284632', 'temperature': 106.0}
+2025-02-09 21:21:58.310 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:51:21.292022', 'temperature': 106.4}
+2025-02-09 21:21:58.440 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:51:26.295495', 'temperature': 106.8}
+2025-02-09 21:21:58.571 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:51:31.298072', 'temperature': 107.2}
+2025-02-09 21:21:58.692 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:51:36.305359', 'temperature': 107.6}
+2025-02-09 21:21:58.823 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:51:41.312396', 'temperature': 108.0}
+2025-02-09 21:21:58.958 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:52:05.811470', 'temperature': 70.4}
+2025-02-09 21:21:59.105 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:52:10.818506', 'temperature': 70.8}
+2025-02-09 21:21:59.257 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:52:15.823885', 'temperature': 71.2}
+2025-02-09 21:21:59.407 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:52:20.830162', 'temperature': 71.6}
+2025-02-09 21:21:59.574 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:52:25.835616', 'temperature': 72.0}
+2025-02-09 21:21:59.724 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:52:30.841581', 'temperature': 72.4}
+2025-02-09 21:21:59.874 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:52:35.848670', 'temperature': 72.8}
+2025-02-09 21:22:00.041 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:52:40.858319', 'temperature': 73.2}
+2025-02-09 21:22:00.085 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:22:00.062526', 'temperature': 127.6}
+2025-02-09 21:22:00.222 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:52:45.864682', 'temperature': 73.6}
+2025-02-09 21:22:00.389 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:52:50.870718', 'temperature': 74.0}
+2025-02-09 21:22:00.590 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:52:55.874798', 'temperature': 74.4}
+2025-02-09 21:22:00.774 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:53:00.894915', 'temperature': 74.8}
+2025-02-09 21:22:00.943 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:53:05.900757', 'temperature': 75.2}
+2025-02-09 21:22:01.159 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:53:10.907012', 'temperature': 75.6}
+2025-02-09 21:22:01.343 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:53:15.911240', 'temperature': 76.0}
+2025-02-09 21:22:01.543 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:53:20.921585', 'temperature': 76.4}
+2025-02-09 21:22:01.744 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:53:25.926233', 'temperature': 76.8}
+2025-02-09 21:22:01.960 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:53:30.928943', 'temperature': 77.2}
+2025-02-09 21:22:02.176 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:53:35.935303', 'temperature': 77.6}
+2025-02-09 21:22:02.377 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:53:40.938461', 'temperature': 78.0}
+2025-02-09 21:22:02.593 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:53:45.945875', 'temperature': 78.4}
+2025-02-09 21:22:02.824 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:53:50.951997', 'temperature': 78.8}
+2025-02-09 21:22:03.047 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:53:55.956053', 'temperature': 79.2}
+2025-02-09 21:22:03.294 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:54:00.962961', 'temperature': 79.6}
+2025-02-09 21:22:03.526 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:54:05.972555', 'temperature': 80.0}
+2025-02-09 21:22:03.779 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:54:10.979569', 'temperature': 80.4}
+2025-02-09 21:22:04.010 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:54:15.981983', 'temperature': 80.8}
+2025-02-09 21:22:04.279 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:54:20.985987', 'temperature': 81.2}
+2025-02-09 21:22:04.511 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:54:25.993135', 'temperature': 81.6}
+2025-02-09 21:22:04.781 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:54:31.000675', 'temperature': 82.0}
+2025-02-09 21:22:04.943 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:54:36.007276', 'temperature': 82.4}
+2025-02-09 21:22:05.144 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:22:05.124837', 'temperature': 128.0}
+2025-02-09 21:22:05.446 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:54:41.015650', 'temperature': 82.8}
+2025-02-09 21:22:05.543 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:54:46.025923', 'temperature': 83.2}
+2025-02-09 21:22:05.643 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:54:51.030703', 'temperature': 83.6}
+2025-02-09 21:22:05.762 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:54:56.036834', 'temperature': 84.0}
+2025-02-09 21:22:05.862 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:55:01.045551', 'temperature': 84.4}
+2025-02-09 21:22:05.962 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:55:06.054650', 'temperature': 84.8}
+2025-02-09 21:22:06.079 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:55:11.060554', 'temperature': 85.2}
+2025-02-09 21:22:06.189 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:55:16.065461', 'temperature': 85.6}
+2025-02-09 21:22:06.302 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:55:21.071332', 'temperature': 86.0}
+2025-02-09 21:22:06.404 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:55:26.081096', 'temperature': 86.4}
+2025-02-09 21:22:06.528 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:55:31.093018', 'temperature': 86.8}
+2025-02-09 21:22:06.642 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:55:36.099709', 'temperature': 87.2}
+2025-02-09 21:22:06.751 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:55:41.106326', 'temperature': 87.6}
+2025-02-09 21:22:06.856 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:55:46.112408', 'temperature': 88.0}
+2025-02-09 21:22:06.963 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:55:51.122732', 'temperature': 88.4}
+2025-02-09 21:22:07.063 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:55:56.129723', 'temperature': 88.8}
+2025-02-09 21:22:07.173 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:56:01.137584', 'temperature': 89.2}
+2025-02-09 21:22:07.282 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:56:06.146434', 'temperature': 89.6}
+2025-02-09 21:22:07.461 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:56:11.153293', 'temperature': 90.0}
+2025-02-09 21:22:07.614 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:56:16.159597', 'temperature': 90.4}
+2025-02-09 21:22:07.713 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:56:21.167163', 'temperature': 90.8}
+2025-02-09 21:22:07.813 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:56:26.172074', 'temperature': 91.2}
+2025-02-09 21:22:07.978 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:56:31.177582', 'temperature': 91.6}
+2025-02-09 21:22:08.101 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:56:36.188196', 'temperature': 92.0}
+2025-02-09 21:22:08.198 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:56:41.192678', 'temperature': 92.4}
+2025-02-09 21:22:08.329 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:56:46.198742', 'temperature': 92.8}
+2025-02-09 21:22:08.450 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:56:51.205433', 'temperature': 93.2}
+2025-02-09 21:22:08.581 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:56:56.213563', 'temperature': 93.6}
+2025-02-09 21:22:08.710 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:57:01.222731', 'temperature': 94.0}
+2025-02-09 21:22:08.845 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:57:06.230000', 'temperature': 94.4}
+2025-02-09 21:22:08.977 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:57:11.240814', 'temperature': 94.8}
+2025-02-09 21:22:09.110 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:57:16.247128', 'temperature': 95.2}
+2025-02-09 21:22:09.258 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:57:21.253873', 'temperature': 95.6}
+2025-02-09 21:22:09.378 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:57:26.263394', 'temperature': 96.0}
+2025-02-09 21:22:09.586 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:57:31.272928', 'temperature': 96.4}
+2025-02-09 21:22:10.047 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:57:36.282169', 'temperature': 96.8}
+2025-02-09 21:22:10.149 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:22:10.149222', 'temperature': 128.4}
+2025-02-09 21:22:15.155 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:22:15.154054', 'temperature': 128.8}
+2025-02-09 21:22:20.156 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:22:20.156996', 'temperature': 129.2}
+2025-02-09 21:22:25.161 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:22:25.161494', 'temperature': 129.6}
+2025-02-09 21:22:30.168 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:22:30.168619', 'temperature': 130.0}
+2025-02-09 21:22:35.172 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:22:35.172227', 'temperature': 130.4}
+2025-02-09 21:22:40.178 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:22:40.178378', 'temperature': 130.8}
+2025-02-09 21:22:45.183 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:22:45.183944', 'temperature': 131.2}
+2025-02-09 21:22:50.187 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:22:50.187019', 'temperature': 131.6}
+2025-02-09 21:22:55.193 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:22:55.193743', 'temperature': 132.0}
+2025-02-09 21:23:00.201 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:23:00.198687', 'temperature': 132.4}
+2025-02-09 21:23:05.203 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:23:05.203037', 'temperature': 132.8}
+2025-02-09 21:23:10.209 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:23:10.209322', 'temperature': 133.2}
+2025-02-09 21:23:15.213 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:23:15.213309', 'temperature': 133.6}
+2025-02-09 21:23:20.217 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:23:20.217398', 'temperature': 134.0}
+2025-02-09 21:23:25.220 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:23:25.220892', 'temperature': 134.4}
+2025-02-09 21:23:30.227 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:23:30.225083', 'temperature': 134.8}
+2025-02-09 21:23:35.229 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:23:35.228706', 'temperature': 135.2}
+2025-02-09 21:23:40.232 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:23:40.232475', 'temperature': 135.6}
+2025-02-09 21:23:45.235 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:23:45.235678', 'temperature': 136.0}
+2025-02-09 21:23:50.241 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:23:50.239480', 'temperature': 136.4}
+2025-02-09 21:23:55.243 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:23:55.243261', 'temperature': 136.8}
+2025-02-09 21:24:00.247 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:24:00.246877', 'temperature': 137.2}
+2025-02-09 21:24:05.253 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:24:05.251256', 'temperature': 137.6}
+2025-02-09 21:24:10.255 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:24:10.255856', 'temperature': 138.0}
+2025-02-09 21:24:15.258 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:24:15.258862', 'temperature': 138.4}
+2025-02-09 21:24:20.261 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:24:20.261795', 'temperature': 138.8}
+2025-02-09 21:24:25.271 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:24:25.268200', 'temperature': 139.2}
+2025-02-09 21:24:30.276 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:24:30.272973', 'temperature': 139.6}
+2025-02-09 21:24:35.279 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:24:35.279699', 'temperature': 140.0}
+2025-02-09 21:24:40.286 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:24:40.286353', 'temperature': 140.4}
+2025-02-09 21:24:45.291 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:24:45.291446', 'temperature': 140.8}
+2025-02-09 21:24:50.295 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:24:50.295773', 'temperature': 141.2}
+2025-02-09 21:24:55.301 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:24:55.301730', 'temperature': 141.6}
+2025-02-09 21:25:00.307 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:25:00.307347', 'temperature': 142.0}
+2025-02-09 21:25:05.313 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:25:05.311615', 'temperature': 142.2}
+2025-02-09 21:25:10.315 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:25:10.315960', 'temperature': 142.0}
+2025-02-09 21:25:15.321 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:25:15.321214', 'temperature': 142.2}
+2025-02-09 21:25:20.324 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:25:20.324771', 'temperature': 142.0}
+2025-02-09 21:25:25.331 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:25:25.331161', 'temperature': 142.2}
+2025-02-09 21:25:30.346 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:25:30.334507', 'temperature': 142.0}
+2025-02-09 21:25:35.349 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:25:35.349427', 'temperature': 142.2}
+2025-02-09 21:25:40.355 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:25:40.355815', 'temperature': 142.0}
+2025-02-09 21:25:45.374 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:25:45.372589', 'temperature': 142.2}
+2025-02-09 21:25:50.378 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:25:50.376361', 'temperature': 142.0}
+2025-02-09 21:25:55.380 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:25:55.380218', 'temperature': 142.2}
+2025-02-09 21:26:00.384 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:26:00.384369', 'temperature': 142.0}
+2025-02-09 21:26:05.393 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:26:05.390045', 'temperature': 142.2}
+2025-02-09 21:26:10.398 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:26:10.395822', 'temperature': 142.0}
+2025-02-09 21:26:15.400 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:26:15.400352', 'temperature': 142.2}
+2025-02-09 21:26:20.404 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:26:20.404294', 'temperature': 142.0}
+2025-02-09 21:26:25.410 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:26:25.410695', 'temperature': 142.2}
+2025-02-09 21:26:30.414 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:26:30.414349', 'temperature': 142.0}
+2025-02-09 21:26:35.417 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:26:35.417915', 'temperature': 142.2}
+2025-02-09 21:26:40.425 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:26:40.421763', 'temperature': 142.0}
+2025-02-09 21:26:45.427 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:26:45.427380', 'temperature': 142.2}
+2025-02-09 21:26:50.432 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:26:50.432509', 'temperature': 142.0}
+2025-02-09 21:26:55.441 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:26:55.436376', 'temperature': 142.2}
+2025-02-09 21:27:00.447 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:27:00.447821', 'temperature': 142.0}
+2025-02-09 21:27:05.451 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:27:05.451268', 'temperature': 142.2}
+2025-02-09 21:27:10.463 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:27:10.463253', 'temperature': 142.0}
+2025-02-09 21:27:15.467 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:27:15.467427', 'temperature': 142.2}
+2025-02-09 21:27:20.475 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:27:20.472755', 'temperature': 142.0}
+2025-02-09 21:27:23.667 | INFO     | utils.utils_logger:<module>:38 - Logging to file: logs\project_log.log
+2025-02-09 21:27:23.897 | INFO     | __main__:main:277 - START consumer.
+2025-02-09 21:27:23.898 | INFO     | __main__:get_kafka_topic:51 - Kafka topic: smoker_csv
+2025-02-09 21:27:23.898 | INFO     | __main__:get_kafka_consumer_group_id:58 - Kafka consumer group id: smoker_group
+2025-02-09 21:27:23.898 | INFO     | __main__:get_rolling_window_size:71 - Rolling window size: 10
+2025-02-09 21:27:23.899 | INFO     | __main__:main:287 - Consumer: Topic 'smoker_csv' and group 'smoker_group'...
+2025-02-09 21:27:23.899 | INFO     | __main__:main:288 - Rolling window size: 10
+2025-02-09 21:27:23.899 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-02-09 21:27:23.900 | INFO     | utils.utils_consumer:create_kafka_consumer:44 - Creating Kafka consumer. Topic='smoker_csv' and group ID='smoker_group'.
+2025-02-09 21:27:24.014 | INFO     | utils.utils_consumer:create_kafka_consumer:59 - Kafka consumer created successfully.
+2025-02-09 21:27:24.014 | INFO     | __main__:main:295 - Polling messages from topic 'smoker_csv'...
+2025-02-09 21:27:24.266 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:51:16.284632', 'temperature': 106.0}
+2025-02-09 21:27:24.497 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:51:21.292022', 'temperature': 106.4}
+2025-02-09 21:27:24.624 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:51:26.295495', 'temperature': 106.8}
+2025-02-09 21:27:24.759 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:51:31.298072', 'temperature': 107.2}
+2025-02-09 21:27:24.857 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:51:36.305359', 'temperature': 107.6}
+2025-02-09 21:27:24.998 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:51:41.312396', 'temperature': 108.0}
+2025-02-09 21:27:25.145 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:52:05.811470', 'temperature': 70.4}
+2025-02-09 21:27:25.298 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:52:10.818506', 'temperature': 70.8}
+2025-02-09 21:27:25.440 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:52:15.823885', 'temperature': 71.2}
+2025-02-09 21:27:25.483 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:27:25.483141', 'temperature': 142.2}
+2025-02-09 21:27:25.598 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:52:20.830162', 'temperature': 71.6}
+2025-02-09 21:27:25.739 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:52:25.835616', 'temperature': 72.0}
+2025-02-09 21:27:25.890 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:52:30.841581', 'temperature': 72.4}
+2025-02-09 21:27:26.046 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:52:35.848670', 'temperature': 72.8}
+2025-02-09 21:27:26.199 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:52:40.858319', 'temperature': 73.2}
+2025-02-09 21:27:26.355 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:52:45.864682', 'temperature': 73.6}
+2025-02-09 21:27:26.540 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:52:50.870718', 'temperature': 74.0}
+2025-02-09 21:27:26.731 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:52:55.874798', 'temperature': 74.4}
+2025-02-09 21:27:26.900 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:53:00.894915', 'temperature': 74.8}
+2025-02-09 21:27:27.072 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:53:05.900757', 'temperature': 75.2}
+2025-02-09 21:27:27.271 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:53:10.907012', 'temperature': 75.6}
+2025-02-09 21:27:27.448 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:53:15.911240', 'temperature': 76.0}
+2025-02-09 21:27:27.665 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:53:20.921585', 'temperature': 76.4}
+2025-02-09 21:27:27.849 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:53:25.926233', 'temperature': 76.8}
+2025-02-09 21:27:28.034 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:53:30.928943', 'temperature': 77.2}
+2025-02-09 21:27:28.219 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:53:35.935303', 'temperature': 77.6}
+2025-02-09 21:27:28.419 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:53:40.938461', 'temperature': 78.0}
+2025-02-09 21:27:28.636 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:53:45.945875', 'temperature': 78.4}
+2025-02-09 21:27:28.883 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:53:50.951997', 'temperature': 78.8}
+2025-02-09 21:27:29.120 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:53:55.956053', 'temperature': 79.2}
+2025-02-09 21:27:29.321 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:54:00.962961', 'temperature': 79.6}
+2025-02-09 21:27:29.584 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:54:05.972555', 'temperature': 80.0}
+2025-02-09 21:27:29.885 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:54:10.979569', 'temperature': 80.4}
+2025-02-09 21:27:30.108 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:54:15.981983', 'temperature': 80.8}
+2025-02-09 21:27:30.371 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:54:20.985987', 'temperature': 81.2}
+2025-02-09 21:27:30.487 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:27:30.487405', 'temperature': 142.0}
+2025-02-09 21:27:30.609 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:54:25.993135', 'temperature': 81.6}
+2025-02-09 21:27:30.872 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:54:31.000675', 'temperature': 82.0}
+2025-02-09 21:27:31.126 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:54:36.007276', 'temperature': 82.4}
+2025-02-09 21:27:31.389 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:54:41.015650', 'temperature': 82.8}
+2025-02-09 21:27:31.658 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:54:46.025923', 'temperature': 83.2}
+2025-02-09 21:27:31.927 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:54:51.030703', 'temperature': 83.6}
+2025-02-09 21:27:32.190 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:54:56.036834', 'temperature': 84.0}
+2025-02-09 21:27:32.459 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:55:01.045551', 'temperature': 84.4}
+2025-02-09 21:27:32.744 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:55:06.054650', 'temperature': 84.8}
+2025-02-09 21:27:33.045 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:55:11.060554', 'temperature': 85.2}
+2025-02-09 21:27:33.361 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:55:16.065461', 'temperature': 85.6}
+2025-02-09 21:27:33.662 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:55:21.071332', 'temperature': 86.0}
+2025-02-09 21:27:33.963 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:55:26.081096', 'temperature': 86.4}
+2025-02-09 21:27:34.279 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:55:31.093018', 'temperature': 86.8}
+2025-02-09 21:27:34.483 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:55:36.099709', 'temperature': 87.2}
+2025-02-09 21:27:34.907 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:55:41.106326', 'temperature': 87.6}
+2025-02-09 21:27:35.033 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:55:46.112408', 'temperature': 88.0}
+2025-02-09 21:27:35.154 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:55:51.122732', 'temperature': 88.4}
+2025-02-09 21:27:35.258 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:55:56.129723', 'temperature': 88.8}
+2025-02-09 21:27:35.386 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:56:01.137584', 'temperature': 89.2}
+2025-02-09 21:27:35.492 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:27:35.491468', 'temperature': 142.2}
+2025-02-09 21:27:35.492 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:56:06.146434', 'temperature': 89.6}
+2025-02-09 21:27:35.618 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:56:11.153293', 'temperature': 90.0}
+2025-02-09 21:27:35.756 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:56:16.159597', 'temperature': 90.4}
+2025-02-09 21:27:35.878 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:56:21.167163', 'temperature': 90.8}
+2025-02-09 21:27:35.991 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:56:26.172074', 'temperature': 91.2}
+2025-02-09 21:27:36.123 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:56:31.177582', 'temperature': 91.6}
+2025-02-09 21:27:36.242 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:56:36.188196', 'temperature': 92.0}
+2025-02-09 21:27:36.359 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:56:41.192678', 'temperature': 92.4}
+2025-02-09 21:27:36.494 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:56:46.198742', 'temperature': 92.8}
+2025-02-09 21:27:36.632 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:56:51.205433', 'temperature': 93.2}
+2025-02-09 21:27:36.760 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:56:56.213563', 'temperature': 93.6}
+2025-02-09 21:27:36.883 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:57:01.222731', 'temperature': 94.0}
+2025-02-09 21:27:37.047 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:57:06.230000', 'temperature': 94.4}
+2025-02-09 21:27:37.183 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:57:11.240814', 'temperature': 94.8}
+2025-02-09 21:27:37.293 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:57:16.247128', 'temperature': 95.2}
+2025-02-09 21:27:37.486 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:57:21.253873', 'temperature': 95.6}
+2025-02-09 21:27:37.778 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:57:26.263394', 'temperature': 96.0}
+2025-02-09 21:27:37.925 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:57:31.272928', 'temperature': 96.4}
+2025-02-09 21:27:38.041 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:57:36.282169', 'temperature': 96.8}
+2025-02-09 21:27:38.164 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:57:41.288521', 'temperature': 97.2}
+2025-02-09 21:27:38.295 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:57:46.296867', 'temperature': 97.6}
+2025-02-09 21:27:38.442 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:57:51.303982', 'temperature': 98.0}
+2025-02-09 21:27:38.565 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:57:56.313209', 'temperature': 98.4}
+2025-02-09 21:27:38.681 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:58:01.320803', 'temperature': 98.8}
+2025-02-09 21:27:38.832 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:58:06.325573', 'temperature': 99.2}
+2025-02-09 21:27:38.994 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:58:11.335201', 'temperature': 99.6}
+2025-02-09 21:27:39.127 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:58:16.357290', 'temperature': 100.0}
+2025-02-09 21:27:39.277 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:58:21.362098', 'temperature': 100.4}
+2025-02-09 21:27:39.428 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:58:26.382704', 'temperature': 100.8}
+2025-02-09 21:27:39.615 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:58:31.392242', 'temperature': 101.2}
+2025-02-09 21:27:39.766 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:58:36.405376', 'temperature': 101.6}
+2025-02-09 21:27:39.882 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:58:41.412923', 'temperature': 102.0}
+2025-02-09 21:27:40.043 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:58:46.419006', 'temperature': 102.4}
+2025-02-09 21:27:40.199 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:58:51.425280', 'temperature': 102.8}
+2025-02-09 21:27:40.383 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:58:56.431760', 'temperature': 103.2}
+2025-02-09 21:27:40.495 | INFO     | __main__:main:166 - Sent message to topic 'smoker_csv': {'timestamp': '2025-02-10T05:27:40.495703', 'temperature': 142.0}
+2025-02-09 21:27:40.526 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:59:01.437894', 'temperature': 103.6}
+2025-02-09 21:27:40.668 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:59:06.444587', 'temperature': 104.0}
+2025-02-09 21:27:40.963 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:59:11.450786', 'temperature': 104.4}
+2025-02-09 21:27:41.200 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:59:16.457319', 'temperature': 104.8}
+2025-02-09 21:32:57.313 | INFO     | utils.utils_logger:<module>:38 - Logging to file: logs\project_log.log
+2025-02-09 21:32:57.313 | INFO     | __main__:main:138 - START producer...
+2025-02-09 21:32:57.441 | INFO     | __main__:main:151 - Kafka producer connected to localhost:9092
+2025-02-09 21:32:57.441 | INFO     | __main__:main:158 - {'message': 'I just tried a movie! It was funny.', 'author': 'Charlie', 'timestamp': '2025-02-09 21:32:57', 'category': 'entertainment', 'sentiment': 0.32, 'keyword_mentioned': 'movie', 'message_length': 35}
+2025-02-09 21:32:58.031 | INFO     | __main__:main:167 - Sent message to Kafka topic 'project_json': {'message': 'I just tried a movie! It was funny.', 'author': 'Charlie', 'timestamp': '2025-02-09 21:32:57', 'category': 'entertainment', 'sentiment': 0.32, 'keyword_mentioned': 'movie', 'message_length': 35}
+2025-02-09 21:33:03.035 | INFO     | __main__:main:158 - {'message': 'I just found a meme! It was weird.', 'author': 'Alice', 'timestamp': '2025-02-09 21:33:03', 'category': 'humor', 'sentiment': 0.85, 'keyword_mentioned': 'meme', 'message_length': 34}
+2025-02-09 21:33:03.035 | INFO     | __main__:main:167 - Sent message to Kafka topic 'project_json': {'message': 'I just found a meme! It was weird.', 'author': 'Alice', 'timestamp': '2025-02-09 21:33:03', 'category': 'humor', 'sentiment': 0.85, 'keyword_mentioned': 'meme', 'message_length': 34}
+2025-02-09 21:33:08.039 | INFO     | __main__:main:158 - {'message': 'I just shared recipe! It was boring.', 'author': 'Charlie', 'timestamp': '2025-02-09 21:33:08', 'category': 'food', 'sentiment': 0.59, 'keyword_mentioned': 'recipe', 'message_length': 36}
+2025-02-09 21:33:08.039 | INFO     | __main__:main:167 - Sent message to Kafka topic 'project_json': {'message': 'I just shared recipe! It was boring.', 'author': 'Charlie', 'timestamp': '2025-02-09 21:33:08', 'category': 'food', 'sentiment': 0.59, 'keyword_mentioned': 'recipe', 'message_length': 36}
+2025-02-09 21:33:13.053 | INFO     | __main__:main:158 - {'message': 'I just found an app! It was boring.', 'author': 'Eve', 'timestamp': '2025-02-09 21:33:13', 'category': 'other', 'sentiment': 0.67, 'keyword_mentioned': 'other', 'message_length': 35}
+2025-02-09 21:33:13.057 | INFO     | __main__:main:167 - Sent message to Kafka topic 'project_json': {'message': 'I just found an app! It was boring.', 'author': 'Eve', 'timestamp': '2025-02-09 21:33:13', 'category': 'other', 'sentiment': 0.67, 'keyword_mentioned': 'other', 'message_length': 35}
+2025-02-09 21:33:18.060 | INFO     | __main__:main:158 - {'message': 'I just tried a story! It was boring.', 'author': 'Charlie', 'timestamp': '2025-02-09 21:33:18', 'category': 'other', 'sentiment': 0.88, 'keyword_mentioned': 'other', 'message_length': 36}
+2025-02-09 21:33:18.060 | INFO     | __main__:main:167 - Sent message to Kafka topic 'project_json': {'message': 'I just tried a story! It was boring.', 'author': 'Charlie', 'timestamp': '2025-02-09 21:33:18', 'category': 'other', 'sentiment': 0.88, 'keyword_mentioned': 'other', 'message_length': 36}
+2025-02-09 21:33:23.068 | INFO     | __main__:main:158 - {'message': 'I just tried a movie! It was weird.', 'author': 'Eve', 'timestamp': '2025-02-09 21:33:23', 'category': 'entertainment', 'sentiment': 0.87, 'keyword_mentioned': 'movie', 'message_length': 35}
+2025-02-09 21:33:23.068 | INFO     | __main__:main:167 - Sent message to Kafka topic 'project_json': {'message': 'I just tried a movie! It was weird.', 'author': 'Eve', 'timestamp': '2025-02-09 21:33:23', 'category': 'entertainment', 'sentiment': 0.87, 'keyword_mentioned': 'movie', 'message_length': 35}
+2025-02-09 21:33:28.077 | INFO     | __main__:main:158 - {'message': 'I just found a trick! It was boring.', 'author': 'Eve', 'timestamp': '2025-02-09 21:33:28', 'category': 'other', 'sentiment': 0.51, 'keyword_mentioned': 'other', 'message_length': 36}
+2025-02-09 21:33:28.077 | INFO     | __main__:main:167 - Sent message to Kafka topic 'project_json': {'message': 'I just found a trick! It was boring.', 'author': 'Eve', 'timestamp': '2025-02-09 21:33:28', 'category': 'other', 'sentiment': 0.51, 'keyword_mentioned': 'other', 'message_length': 36}
+2025-02-09 21:33:33.090 | INFO     | __main__:main:158 - {'message': 'I just loved a trick! It was weird.', 'author': 'Eve', 'timestamp': '2025-02-09 21:33:33', 'category': 'other', 'sentiment': 0.1, 'keyword_mentioned': 'other', 'message_length': 35}
+2025-02-09 21:33:33.090 | INFO     | __main__:main:167 - Sent message to Kafka topic 'project_json': {'message': 'I just loved a trick! It was weird.', 'author': 'Eve', 'timestamp': '2025-02-09 21:33:33', 'category': 'other', 'sentiment': 0.1, 'keyword_mentioned': 'other', 'message_length': 35}
+2025-02-09 21:33:38.096 | INFO     | __main__:main:158 - {'message': 'I just loved travel! It was boring.', 'author': 'Bob', 'timestamp': '2025-02-09 21:33:38', 'category': 'travel', 'sentiment': 0.55, 'keyword_mentioned': 'travel', 'message_length': 35}
+2025-02-09 21:33:38.096 | INFO     | __main__:main:167 - Sent message to Kafka topic 'project_json': {'message': 'I just loved travel! It was boring.', 'author': 'Bob', 'timestamp': '2025-02-09 21:33:38', 'category': 'travel', 'sentiment': 0.55, 'keyword_mentioned': 'travel', 'message_length': 35}
+2025-02-09 21:33:43.109 | INFO     | __main__:main:158 - {'message': 'I just tried Python! It was amazing.', 'author': 'Eve', 'timestamp': '2025-02-09 21:33:43', 'category': 'tech', 'sentiment': 0.32, 'keyword_mentioned': 'Python', 'message_length': 36}
+2025-02-09 21:33:43.109 | INFO     | __main__:main:167 - Sent message to Kafka topic 'project_json': {'message': 'I just tried Python! It was amazing.', 'author': 'Eve', 'timestamp': '2025-02-09 21:33:43', 'category': 'tech', 'sentiment': 0.32, 'keyword_mentioned': 'Python', 'message_length': 36}
+2025-02-09 21:33:48.119 | INFO     | __main__:main:158 - {'message': 'I just tried a meme! It was amazing.', 'author': 'Charlie', 'timestamp': '2025-02-09 21:33:48', 'category': 'humor', 'sentiment': 0.88, 'keyword_mentioned': 'meme', 'message_length': 36}
+2025-02-09 21:33:48.119 | INFO     | __main__:main:167 - Sent message to Kafka topic 'project_json': {'message': 'I just tried a meme! It was amazing.', 'author': 'Charlie', 'timestamp': '2025-02-09 21:33:48', 'category': 'humor', 'sentiment': 0.88, 'keyword_mentioned': 'meme', 'message_length': 36}
+2025-02-09 21:33:53.132 | INFO     | __main__:main:158 - {'message': 'I just saw recipe! It was weird.', 'author': 'Alice', 'timestamp': '2025-02-09 21:33:53', 'category': 'food', 'sentiment': 0.23, 'keyword_mentioned': 'recipe', 'message_length': 32}
+2025-02-09 21:33:53.132 | INFO     | __main__:main:167 - Sent message to Kafka topic 'project_json': {'message': 'I just saw recipe! It was weird.', 'author': 'Alice', 'timestamp': '2025-02-09 21:33:53', 'category': 'food', 'sentiment': 0.23, 'keyword_mentioned': 'recipe', 'message_length': 32}
+2025-02-09 21:33:58.143 | INFO     | __main__:main:158 - {'message': 'I just shared Python! It was funny.', 'author': 'Charlie', 'timestamp': '2025-02-09 21:33:58', 'category': 'tech', 'sentiment': 0.69, 'keyword_mentioned': 'Python', 'message_length': 35}
+2025-02-09 21:33:58.159 | INFO     | __main__:main:167 - Sent message to Kafka topic 'project_json': {'message': 'I just shared Python! It was funny.', 'author': 'Charlie', 'timestamp': '2025-02-09 21:33:58', 'category': 'tech', 'sentiment': 0.69, 'keyword_mentioned': 'Python', 'message_length': 35}
+2025-02-09 21:34:00.192 | INFO     | utils.utils_logger:<module>:38 - Logging to file: logs\project_log.log
+2025-02-09 21:34:00.449 | INFO     | __main__:main:185 - START consumer.
+2025-02-09 21:34:00.449 | INFO     | __main__:get_kafka_topic:52 - Kafka topic: buzzline_json
+2025-02-09 21:34:00.449 | INFO     | __main__:get_kafka_consumer_group_id:59 - Kafka consumer group id: buzz_group
+2025-02-09 21:34:00.450 | INFO     | __main__:main:190 - Consumer: Topic 'buzzline_json' and group 'buzz_group'...
+2025-02-09 21:34:00.450 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-02-09 21:34:00.450 | INFO     | utils.utils_consumer:create_kafka_consumer:44 - Creating Kafka consumer. Topic='buzzline_json' and group ID='buzz_group'.
+2025-02-09 21:34:00.563 | INFO     | utils.utils_consumer:create_kafka_consumer:59 - Kafka consumer created successfully.
+2025-02-09 21:34:00.563 | INFO     | __main__:main:196 - Polling messages from topic 'buzzline_json'...
+2025-02-09 21:34:00.708 | INFO     | __main__:process_message:144 - Processed JSON message: {'message': 'Kafka is awesome.', 'author': 'Diana'}
+2025-02-09 21:34:00.709 | INFO     | __main__:process_message:150 - Message received from author: Diana
+2025-02-09 21:34:00.709 | INFO     | __main__:process_message:156 - Updated author counts: {'Diana': 1}
+2025-02-09 21:34:00.961 | INFO     | __main__:process_message:162 - Chart updated successfully for message: {"message": "Kafka is awesome.", "author": "Diana"}
+2025-02-09 21:34:03.163 | INFO     | __main__:main:158 - {'message': 'I just shared Python! It was exciting.', 'author': 'Eve', 'timestamp': '2025-02-09 21:34:03', 'category': 'tech', 'sentiment': 0.83, 'keyword_mentioned': 'Python', 'message_length': 38}
+2025-02-09 21:34:03.163 | INFO     | __main__:main:167 - Sent message to Kafka topic 'project_json': {'message': 'I just shared Python! It was exciting.', 'author': 'Eve', 'timestamp': '2025-02-09 21:34:03', 'category': 'tech', 'sentiment': 0.83, 'keyword_mentioned': 'Python', 'message_length': 38}
+2025-02-09 21:34:08.174 | INFO     | __main__:main:158 - {'message': 'I just loved a meme! It was boring.', 'author': 'Charlie', 'timestamp': '2025-02-09 21:34:08', 'category': 'humor', 'sentiment': 0.22, 'keyword_mentioned': 'meme', 'message_length': 35}
+2025-02-09 21:34:08.174 | INFO     | __main__:main:167 - Sent message to Kafka topic 'project_json': {'message': 'I just loved a meme! It was boring.', 'author': 'Charlie', 'timestamp': '2025-02-09 21:34:08', 'category': 'humor', 'sentiment': 0.22, 'keyword_mentioned': 'meme', 'message_length': 35}
+2025-02-09 21:34:13.182 | INFO     | __main__:main:158 - {'message': 'I just loved JavaScript! It was funny.', 'author': 'Bob', 'timestamp': '2025-02-09 21:34:13', 'category': 'tech', 'sentiment': 0.01, 'keyword_mentioned': 'JavaScript', 'message_length': 38}
+2025-02-09 21:34:13.182 | INFO     | __main__:main:167 - Sent message to Kafka topic 'project_json': {'message': 'I just loved JavaScript! It was funny.', 'author': 'Bob', 'timestamp': '2025-02-09 21:34:13', 'category': 'tech', 'sentiment': 0.01, 'keyword_mentioned': 'JavaScript', 'message_length': 38}
+2025-02-09 21:34:18.196 | INFO     | __main__:main:158 - {'message': 'I just saw a story! It was weird.', 'author': 'Charlie', 'timestamp': '2025-02-09 21:34:18', 'category': 'other', 'sentiment': 0.14, 'keyword_mentioned': 'other', 'message_length': 33}
+2025-02-09 21:34:18.196 | INFO     | __main__:main:167 - Sent message to Kafka topic 'project_json': {'message': 'I just saw a story! It was weird.', 'author': 'Charlie', 'timestamp': '2025-02-09 21:34:18', 'category': 'other', 'sentiment': 0.14, 'keyword_mentioned': 'other', 'message_length': 33}
+2025-02-09 21:34:23.202 | INFO     | __main__:main:158 - {'message': 'I just shared an app! It was funny.', 'author': 'Bob', 'timestamp': '2025-02-09 21:34:23', 'category': 'other', 'sentiment': 0.16, 'keyword_mentioned': 'other', 'message_length': 35}
+2025-02-09 21:34:23.204 | INFO     | __main__:main:167 - Sent message to Kafka topic 'project_json': {'message': 'I just shared an app! It was funny.', 'author': 'Bob', 'timestamp': '2025-02-09 21:34:23', 'category': 'other', 'sentiment': 0.16, 'keyword_mentioned': 'other', 'message_length': 35}
+2025-02-09 21:34:28.206 | INFO     | __main__:main:158 - {'message': 'I just found JavaScript! It was weird.', 'author': 'Alice', 'timestamp': '2025-02-09 21:34:28', 'category': 'tech', 'sentiment': 0.78, 'keyword_mentioned': 'JavaScript', 'message_length': 38}
+2025-02-09 21:34:28.206 | INFO     | __main__:main:167 - Sent message to Kafka topic 'project_json': {'message': 'I just found JavaScript! It was weird.', 'author': 'Alice', 'timestamp': '2025-02-09 21:34:28', 'category': 'tech', 'sentiment': 0.78, 'keyword_mentioned': 'JavaScript', 'message_length': 38}
+2025-02-09 21:34:33.211 | INFO     | __main__:main:158 - {'message': 'I just loved travel! It was boring.', 'author': 'Charlie', 'timestamp': '2025-02-09 21:34:33', 'category': 'travel', 'sentiment': 0.13, 'keyword_mentioned': 'travel', 'message_length': 35}
+2025-02-09 21:34:33.211 | INFO     | __main__:main:167 - Sent message to Kafka topic 'project_json': {'message': 'I just loved travel! It was boring.', 'author': 'Charlie', 'timestamp': '2025-02-09 21:34:33', 'category': 'travel', 'sentiment': 0.13, 'keyword_mentioned': 'travel', 'message_length': 35}
+2025-02-09 21:34:38.217 | INFO     | __main__:main:158 - {'message': 'I just tried a meme! It was weird.', 'author': 'Charlie', 'timestamp': '2025-02-09 21:34:38', 'category': 'humor', 'sentiment': 0.27, 'keyword_mentioned': 'meme', 'message_length': 34}
+2025-02-09 21:34:38.217 | INFO     | __main__:main:167 - Sent message to Kafka topic 'project_json': {'message': 'I just tried a meme! It was weird.', 'author': 'Charlie', 'timestamp': '2025-02-09 21:34:38', 'category': 'humor', 'sentiment': 0.27, 'keyword_mentioned': 'meme', 'message_length': 34}
+2025-02-09 21:34:43.227 | INFO     | __main__:main:158 - {'message': 'I just loved a movie! It was funny.', 'author': 'Charlie', 'timestamp': '2025-02-09 21:34:43', 'category': 'entertainment', 'sentiment': 0.36, 'keyword_mentioned': 'movie', 'message_length': 35}
+2025-02-09 21:34:43.227 | INFO     | __main__:main:167 - Sent message to Kafka topic 'project_json': {'message': 'I just loved a movie! It was funny.', 'author': 'Charlie', 'timestamp': '2025-02-09 21:34:43', 'category': 'entertainment', 'sentiment': 0.36, 'keyword_mentioned': 'movie', 'message_length': 35}
+2025-02-09 21:34:48.235 | INFO     | __main__:main:158 - {'message': 'I just loved a movie! It was boring.', 'author': 'Bob', 'timestamp': '2025-02-09 21:34:48', 'category': 'entertainment', 'sentiment': 0.91, 'keyword_mentioned': 'movie', 'message_length': 36}
+2025-02-09 21:34:48.252 | INFO     | __main__:main:167 - Sent message to Kafka topic 'project_json': {'message': 'I just loved a movie! It was boring.', 'author': 'Bob', 'timestamp': '2025-02-09 21:34:48', 'category': 'entertainment', 'sentiment': 0.91, 'keyword_mentioned': 'movie', 'message_length': 36}
+2025-02-09 21:34:53.254 | INFO     | __main__:main:158 - {'message': 'I just tried game! It was amazing.', 'author': 'Bob', 'timestamp': '2025-02-09 21:34:53', 'category': 'gaming', 'sentiment': 0.82, 'keyword_mentioned': 'game', 'message_length': 34}
+2025-02-09 21:34:53.254 | INFO     | __main__:main:167 - Sent message to Kafka topic 'project_json': {'message': 'I just tried game! It was amazing.', 'author': 'Bob', 'timestamp': '2025-02-09 21:34:53', 'category': 'gaming', 'sentiment': 0.82, 'keyword_mentioned': 'game', 'message_length': 34}
+2025-02-09 21:34:58.260 | INFO     | __main__:main:158 - {'message': 'I just found a story! It was weird.', 'author': 'Bob', 'timestamp': '2025-02-09 21:34:58', 'category': 'other', 'sentiment': 0.39, 'keyword_mentioned': 'other', 'message_length': 35}
+2025-02-09 21:34:58.263 | INFO     | __main__:main:167 - Sent message to Kafka topic 'project_json': {'message': 'I just found a story! It was weird.', 'author': 'Bob', 'timestamp': '2025-02-09 21:34:58', 'category': 'other', 'sentiment': 0.39, 'keyword_mentioned': 'other', 'message_length': 35}
+2025-02-09 21:35:03.266 | INFO     | __main__:main:158 - {'message': 'I just tried a story! It was amazing.', 'author': 'Alice', 'timestamp': '2025-02-09 21:35:03', 'category': 'other', 'sentiment': 0.16, 'keyword_mentioned': 'other', 'message_length': 37}
+2025-02-09 21:35:03.266 | INFO     | __main__:main:167 - Sent message to Kafka topic 'project_json': {'message': 'I just tried a story! It was amazing.', 'author': 'Alice', 'timestamp': '2025-02-09 21:35:03', 'category': 'other', 'sentiment': 0.16, 'keyword_mentioned': 'other', 'message_length': 37}
+2025-02-09 21:35:08.272 | INFO     | __main__:main:158 - {'message': 'I just tried recipe! It was weird.', 'author': 'Bob', 'timestamp': '2025-02-09 21:35:08', 'category': 'food', 'sentiment': 0.33, 'keyword_mentioned': 'recipe', 'message_length': 34}
+2025-02-09 21:35:08.272 | INFO     | __main__:main:167 - Sent message to Kafka topic 'project_json': {'message': 'I just tried recipe! It was weird.', 'author': 'Bob', 'timestamp': '2025-02-09 21:35:08', 'category': 'food', 'sentiment': 0.33, 'keyword_mentioned': 'recipe', 'message_length': 34}
+2025-02-09 21:35:13.284 | INFO     | __main__:main:158 - {'message': 'I just tried an app! It was boring.', 'author': 'Charlie', 'timestamp': '2025-02-09 21:35:13', 'category': 'other', 'sentiment': 0.62, 'keyword_mentioned': 'other', 'message_length': 35}
+2025-02-09 21:35:13.285 | INFO     | __main__:main:167 - Sent message to Kafka topic 'project_json': {'message': 'I just tried an app! It was boring.', 'author': 'Charlie', 'timestamp': '2025-02-09 21:35:13', 'category': 'other', 'sentiment': 0.62, 'keyword_mentioned': 'other', 'message_length': 35}
+2025-02-09 21:35:18.289 | INFO     | __main__:main:158 - {'message': 'I just found game! It was amazing.', 'author': 'Bob', 'timestamp': '2025-02-09 21:35:18', 'category': 'gaming', 'sentiment': 0.98, 'keyword_mentioned': 'game', 'message_length': 34}
+2025-02-09 21:35:18.289 | INFO     | __main__:main:167 - Sent message to Kafka topic 'project_json': {'message': 'I just found game! It was amazing.', 'author': 'Bob', 'timestamp': '2025-02-09 21:35:18', 'category': 'gaming', 'sentiment': 0.98, 'keyword_mentioned': 'game', 'message_length': 34}
+2025-02-09 21:35:23.296 | INFO     | __main__:main:158 - {'message': 'I just tried a story! It was amazing.', 'author': 'Bob', 'timestamp': '2025-02-09 21:35:23', 'category': 'other', 'sentiment': 0.55, 'keyword_mentioned': 'other', 'message_length': 37}
+2025-02-09 21:35:23.298 | INFO     | __main__:main:167 - Sent message to Kafka topic 'project_json': {'message': 'I just tried a story! It was amazing.', 'author': 'Bob', 'timestamp': '2025-02-09 21:35:23', 'category': 'other', 'sentiment': 0.55, 'keyword_mentioned': 'other', 'message_length': 37}
+2025-02-09 21:35:28.301 | INFO     | __main__:main:158 - {'message': 'I just tried a story! It was amazing.', 'author': 'Eve', 'timestamp': '2025-02-09 21:35:28', 'category': 'other', 'sentiment': 0.86, 'keyword_mentioned': 'other', 'message_length': 37}
+2025-02-09 21:35:28.303 | INFO     | __main__:main:167 - Sent message to Kafka topic 'project_json': {'message': 'I just tried a story! It was amazing.', 'author': 'Eve', 'timestamp': '2025-02-09 21:35:28', 'category': 'other', 'sentiment': 0.86, 'keyword_mentioned': 'other', 'message_length': 37}
+2025-02-09 21:35:33.305 | INFO     | __main__:main:158 - {'message': 'I just loved a movie! It was amazing.', 'author': 'Alice', 'timestamp': '2025-02-09 21:35:33', 'category': 'entertainment', 'sentiment': 0.3, 'keyword_mentioned': 'movie', 'message_length': 37}
+2025-02-09 21:35:33.308 | INFO     | __main__:main:167 - Sent message to Kafka topic 'project_json': {'message': 'I just loved a movie! It was amazing.', 'author': 'Alice', 'timestamp': '2025-02-09 21:35:33', 'category': 'entertainment', 'sentiment': 0.3, 'keyword_mentioned': 'movie', 'message_length': 37}
+2025-02-09 21:35:38.311 | INFO     | __main__:main:158 - {'message': 'I just tried a story! It was exciting.', 'author': 'Bob', 'timestamp': '2025-02-09 21:35:38', 'category': 'other', 'sentiment': 0.25, 'keyword_mentioned': 'other', 'message_length': 38}
+2025-02-09 21:35:38.314 | INFO     | __main__:main:167 - Sent message to Kafka topic 'project_json': {'message': 'I just tried a story! It was exciting.', 'author': 'Bob', 'timestamp': '2025-02-09 21:35:38', 'category': 'other', 'sentiment': 0.25, 'keyword_mentioned': 'other', 'message_length': 38}
+2025-02-09 21:35:43.318 | INFO     | __main__:main:158 - {'message': 'I just loved JavaScript! It was boring.', 'author': 'Charlie', 'timestamp': '2025-02-09 21:35:43', 'category': 'tech', 'sentiment': 0.88, 'keyword_mentioned': 'JavaScript', 'message_length': 39}
+2025-02-09 21:35:43.318 | INFO     | __main__:main:167 - Sent message to Kafka topic 'project_json': {'message': 'I just loved JavaScript! It was boring.', 'author': 'Charlie', 'timestamp': '2025-02-09 21:35:43', 'category': 'tech', 'sentiment': 0.88, 'keyword_mentioned': 'JavaScript', 'message_length': 39}
+2025-02-09 21:35:48.324 | INFO     | __main__:main:158 - {'message': 'I just found an app! It was amazing.', 'author': 'Bob', 'timestamp': '2025-02-09 21:35:48', 'category': 'other', 'sentiment': 0.52, 'keyword_mentioned': 'other', 'message_length': 36}
+2025-02-09 21:35:48.324 | INFO     | __main__:main:167 - Sent message to Kafka topic 'project_json': {'message': 'I just found an app! It was amazing.', 'author': 'Bob', 'timestamp': '2025-02-09 21:35:48', 'category': 'other', 'sentiment': 0.52, 'keyword_mentioned': 'other', 'message_length': 36}
+2025-02-09 21:35:53.329 | INFO     | __main__:main:158 - {'message': 'I just tried game! It was funny.', 'author': 'Eve', 'timestamp': '2025-02-09 21:35:53', 'category': 'gaming', 'sentiment': 0.09, 'keyword_mentioned': 'game', 'message_length': 32}
+2025-02-09 21:35:53.333 | INFO     | __main__:main:167 - Sent message to Kafka topic 'project_json': {'message': 'I just tried game! It was funny.', 'author': 'Eve', 'timestamp': '2025-02-09 21:35:53', 'category': 'gaming', 'sentiment': 0.09, 'keyword_mentioned': 'game', 'message_length': 32}
+2025-02-09 21:35:58.335 | INFO     | __main__:main:158 - {'message': 'I just loved recipe! It was funny.', 'author': 'Alice', 'timestamp': '2025-02-09 21:35:58', 'category': 'food', 'sentiment': 0.01, 'keyword_mentioned': 'recipe', 'message_length': 34}
+2025-02-09 21:35:58.335 | INFO     | __main__:main:167 - Sent message to Kafka topic 'project_json': {'message': 'I just loved recipe! It was funny.', 'author': 'Alice', 'timestamp': '2025-02-09 21:35:58', 'category': 'food', 'sentiment': 0.01, 'keyword_mentioned': 'recipe', 'message_length': 34}
+2025-02-09 21:36:03.340 | INFO     | __main__:main:158 - {'message': 'I just tried recipe! It was amazing.', 'author': 'Alice', 'timestamp': '2025-02-09 21:36:03', 'category': 'food', 'sentiment': 0.97, 'keyword_mentioned': 'recipe', 'message_length': 36}
+2025-02-09 21:36:03.343 | INFO     | __main__:main:167 - Sent message to Kafka topic 'project_json': {'message': 'I just tried recipe! It was amazing.', 'author': 'Alice', 'timestamp': '2025-02-09 21:36:03', 'category': 'food', 'sentiment': 0.97, 'keyword_mentioned': 'recipe', 'message_length': 36}
+2025-02-09 21:36:08.345 | INFO     | __main__:main:158 - {'message': 'I just loved a movie! It was weird.', 'author': 'Eve', 'timestamp': '2025-02-09 21:36:08', 'category': 'entertainment', 'sentiment': 0.1, 'keyword_mentioned': 'movie', 'message_length': 35}
+2025-02-09 21:36:08.345 | INFO     | __main__:main:167 - Sent message to Kafka topic 'project_json': {'message': 'I just loved a movie! It was weird.', 'author': 'Eve', 'timestamp': '2025-02-09 21:36:08', 'category': 'entertainment', 'sentiment': 0.1, 'keyword_mentioned': 'movie', 'message_length': 35}
+2025-02-09 21:36:13.353 | INFO     | __main__:main:158 - {'message': 'I just tried a story! It was exciting.', 'author': 'Alice', 'timestamp': '2025-02-09 21:36:13', 'category': 'other', 'sentiment': 0.32, 'keyword_mentioned': 'other', 'message_length': 38}
+2025-02-09 21:36:13.353 | INFO     | __main__:main:167 - Sent message to Kafka topic 'project_json': {'message': 'I just tried a story! It was exciting.', 'author': 'Alice', 'timestamp': '2025-02-09 21:36:13', 'category': 'other', 'sentiment': 0.32, 'keyword_mentioned': 'other', 'message_length': 38}
+2025-02-09 21:36:18.357 | INFO     | __main__:main:158 - {'message': 'I just tried a story! It was boring.', 'author': 'Bob', 'timestamp': '2025-02-09 21:36:18', 'category': 'other', 'sentiment': 0.62, 'keyword_mentioned': 'other', 'message_length': 36}
+2025-02-09 21:36:18.357 | INFO     | __main__:main:167 - Sent message to Kafka topic 'project_json': {'message': 'I just tried a story! It was boring.', 'author': 'Bob', 'timestamp': '2025-02-09 21:36:18', 'category': 'other', 'sentiment': 0.62, 'keyword_mentioned': 'other', 'message_length': 36}
+2025-02-09 21:36:23.361 | INFO     | __main__:main:158 - {'message': 'I just loved travel! It was weird.', 'author': 'Alice', 'timestamp': '2025-02-09 21:36:23', 'category': 'travel', 'sentiment': 0.48, 'keyword_mentioned': 'travel', 'message_length': 34}
+2025-02-09 21:36:23.367 | INFO     | __main__:main:167 - Sent message to Kafka topic 'project_json': {'message': 'I just loved travel! It was weird.', 'author': 'Alice', 'timestamp': '2025-02-09 21:36:23', 'category': 'travel', 'sentiment': 0.48, 'keyword_mentioned': 'travel', 'message_length': 34}
+2025-02-09 21:36:28.371 | INFO     | __main__:main:158 - {'message': 'I just found a meme! It was amazing.', 'author': 'Eve', 'timestamp': '2025-02-09 21:36:28', 'category': 'humor', 'sentiment': 0.38, 'keyword_mentioned': 'meme', 'message_length': 36}
+2025-02-09 21:36:28.371 | INFO     | __main__:main:167 - Sent message to Kafka topic 'project_json': {'message': 'I just found a meme! It was amazing.', 'author': 'Eve', 'timestamp': '2025-02-09 21:36:28', 'category': 'humor', 'sentiment': 0.38, 'keyword_mentioned': 'meme', 'message_length': 36}
+2025-02-09 21:36:33.378 | INFO     | __main__:main:158 - {'message': 'I just tried JavaScript! It was funny.', 'author': 'Charlie', 'timestamp': '2025-02-09 21:36:33', 'category': 'tech', 'sentiment': 0.71, 'keyword_mentioned': 'JavaScript', 'message_length': 38}
+2025-02-09 21:36:33.381 | INFO     | __main__:main:167 - Sent message to Kafka topic 'project_json': {'message': 'I just tried JavaScript! It was funny.', 'author': 'Charlie', 'timestamp': '2025-02-09 21:36:33', 'category': 'tech', 'sentiment': 0.71, 'keyword_mentioned': 'JavaScript', 'message_length': 38}
+2025-02-09 21:36:38.383 | INFO     | __main__:main:158 - {'message': 'I just loved a movie! It was exciting.', 'author': 'Alice', 'timestamp': '2025-02-09 21:36:38', 'category': 'entertainment', 'sentiment': 0.61, 'keyword_mentioned': 'movie', 'message_length': 38}
+2025-02-09 21:36:38.383 | INFO     | __main__:main:167 - Sent message to Kafka topic 'project_json': {'message': 'I just loved a movie! It was exciting.', 'author': 'Alice', 'timestamp': '2025-02-09 21:36:38', 'category': 'entertainment', 'sentiment': 0.61, 'keyword_mentioned': 'movie', 'message_length': 38}
+2025-02-09 21:36:43.387 | INFO     | __main__:main:158 - {'message': 'I just shared travel! It was exciting.', 'author': 'Bob', 'timestamp': '2025-02-09 21:36:43', 'category': 'travel', 'sentiment': 0.15, 'keyword_mentioned': 'travel', 'message_length': 38}
+2025-02-09 21:36:43.390 | INFO     | __main__:main:167 - Sent message to Kafka topic 'project_json': {'message': 'I just shared travel! It was exciting.', 'author': 'Bob', 'timestamp': '2025-02-09 21:36:43', 'category': 'travel', 'sentiment': 0.15, 'keyword_mentioned': 'travel', 'message_length': 38}
+2025-02-09 21:36:48.392 | INFO     | __main__:main:158 - {'message': 'I just tried a movie! It was exciting.', 'author': 'Eve', 'timestamp': '2025-02-09 21:36:48', 'category': 'entertainment', 'sentiment': 0.04, 'keyword_mentioned': 'movie', 'message_length': 38}
+2025-02-09 21:36:48.392 | INFO     | __main__:main:167 - Sent message to Kafka topic 'project_json': {'message': 'I just tried a movie! It was exciting.', 'author': 'Eve', 'timestamp': '2025-02-09 21:36:48', 'category': 'entertainment', 'sentiment': 0.04, 'keyword_mentioned': 'movie', 'message_length': 38}
+2025-02-09 21:36:53.398 | INFO     | __main__:main:158 - {'message': 'I just tried an app! It was boring.', 'author': 'Charlie', 'timestamp': '2025-02-09 21:36:53', 'category': 'other', 'sentiment': 0.92, 'keyword_mentioned': 'other', 'message_length': 35}
+2025-02-09 21:36:53.398 | INFO     | __main__:main:167 - Sent message to Kafka topic 'project_json': {'message': 'I just tried an app! It was boring.', 'author': 'Charlie', 'timestamp': '2025-02-09 21:36:53', 'category': 'other', 'sentiment': 0.92, 'keyword_mentioned': 'other', 'message_length': 35}
+2025-02-09 21:36:58.404 | INFO     | __main__:main:158 - {'message': 'I just saw travel! It was exciting.', 'author': 'Alice', 'timestamp': '2025-02-09 21:36:58', 'category': 'travel', 'sentiment': 0.97, 'keyword_mentioned': 'travel', 'message_length': 35}
+2025-02-09 21:36:58.404 | INFO     | __main__:main:167 - Sent message to Kafka topic 'project_json': {'message': 'I just saw travel! It was exciting.', 'author': 'Alice', 'timestamp': '2025-02-09 21:36:58', 'category': 'travel', 'sentiment': 0.97, 'keyword_mentioned': 'travel', 'message_length': 35}
+2025-02-09 21:37:03.411 | INFO     | __main__:main:158 - {'message': 'I just loved Python! It was weird.', 'author': 'Eve', 'timestamp': '2025-02-09 21:37:03', 'category': 'tech', 'sentiment': 0.03, 'keyword_mentioned': 'Python', 'message_length': 34}
+2025-02-09 21:37:03.411 | INFO     | __main__:main:167 - Sent message to Kafka topic 'project_json': {'message': 'I just loved Python! It was weird.', 'author': 'Eve', 'timestamp': '2025-02-09 21:37:03', 'category': 'tech', 'sentiment': 0.03, 'keyword_mentioned': 'Python', 'message_length': 34}
+2025-02-09 21:37:08.417 | INFO     | __main__:main:158 - {'message': 'I just saw a meme! It was exciting.', 'author': 'Alice', 'timestamp': '2025-02-09 21:37:08', 'category': 'humor', 'sentiment': 0.17, 'keyword_mentioned': 'meme', 'message_length': 35}
+2025-02-09 21:37:08.419 | INFO     | __main__:main:167 - Sent message to Kafka topic 'project_json': {'message': 'I just saw a meme! It was exciting.', 'author': 'Alice', 'timestamp': '2025-02-09 21:37:08', 'category': 'humor', 'sentiment': 0.17, 'keyword_mentioned': 'meme', 'message_length': 35}
+2025-02-09 21:37:13.425 | INFO     | __main__:main:158 - {'message': 'I just tried game! It was exciting.', 'author': 'Eve', 'timestamp': '2025-02-09 21:37:13', 'category': 'gaming', 'sentiment': 0.02, 'keyword_mentioned': 'game', 'message_length': 35}
+2025-02-09 21:37:13.426 | INFO     | __main__:main:167 - Sent message to Kafka topic 'project_json': {'message': 'I just tried game! It was exciting.', 'author': 'Eve', 'timestamp': '2025-02-09 21:37:13', 'category': 'gaming', 'sentiment': 0.02, 'keyword_mentioned': 'game', 'message_length': 35}
+2025-02-09 21:37:18.430 | INFO     | __main__:main:158 - {'message': 'I just tried a meme! It was amazing.', 'author': 'Charlie', 'timestamp': '2025-02-09 21:37:18', 'category': 'humor', 'sentiment': 0.44, 'keyword_mentioned': 'meme', 'message_length': 36}
+2025-02-09 21:37:18.433 | INFO     | __main__:main:167 - Sent message to Kafka topic 'project_json': {'message': 'I just tried a meme! It was amazing.', 'author': 'Charlie', 'timestamp': '2025-02-09 21:37:18', 'category': 'humor', 'sentiment': 0.44, 'keyword_mentioned': 'meme', 'message_length': 36}
+2025-02-09 21:37:23.435 | INFO     | __main__:main:158 - {'message': 'I just loved game! It was funny.', 'author': 'Alice', 'timestamp': '2025-02-09 21:37:23', 'category': 'gaming', 'sentiment': 0.23, 'keyword_mentioned': 'game', 'message_length': 32}
+2025-02-09 21:37:23.439 | INFO     | __main__:main:167 - Sent message to Kafka topic 'project_json': {'message': 'I just loved game! It was funny.', 'author': 'Alice', 'timestamp': '2025-02-09 21:37:23', 'category': 'gaming', 'sentiment': 0.23, 'keyword_mentioned': 'game', 'message_length': 32}
+2025-02-09 21:37:28.441 | INFO     | __main__:main:158 - {'message': 'I just saw Python! It was boring.', 'author': 'Bob', 'timestamp': '2025-02-09 21:37:28', 'category': 'tech', 'sentiment': 0.39, 'keyword_mentioned': 'Python', 'message_length': 33}
+2025-02-09 21:37:28.441 | INFO     | __main__:main:167 - Sent message to Kafka topic 'project_json': {'message': 'I just saw Python! It was boring.', 'author': 'Bob', 'timestamp': '2025-02-09 21:37:28', 'category': 'tech', 'sentiment': 0.39, 'keyword_mentioned': 'Python', 'message_length': 33}
+2025-02-09 21:37:33.445 | INFO     | __main__:main:158 - {'message': 'I just tried a meme! It was funny.', 'author': 'Bob', 'timestamp': '2025-02-09 21:37:33', 'category': 'humor', 'sentiment': 0.69, 'keyword_mentioned': 'meme', 'message_length': 34}
+2025-02-09 21:37:33.447 | INFO     | __main__:main:167 - Sent message to Kafka topic 'project_json': {'message': 'I just tried a meme! It was funny.', 'author': 'Bob', 'timestamp': '2025-02-09 21:37:33', 'category': 'humor', 'sentiment': 0.69, 'keyword_mentioned': 'meme', 'message_length': 34}
+2025-02-09 21:37:38.449 | INFO     | __main__:main:158 - {'message': 'I just tried travel! It was boring.', 'author': 'Alice', 'timestamp': '2025-02-09 21:37:38', 'category': 'travel', 'sentiment': 0.84, 'keyword_mentioned': 'travel', 'message_length': 35}
+2025-02-09 21:37:38.452 | INFO     | __main__:main:167 - Sent message to Kafka topic 'project_json': {'message': 'I just tried travel! It was boring.', 'author': 'Alice', 'timestamp': '2025-02-09 21:37:38', 'category': 'travel', 'sentiment': 0.84, 'keyword_mentioned': 'travel', 'message_length': 35}
+2025-02-09 21:37:43.455 | INFO     | __main__:main:158 - {'message': 'I just loved a movie! It was amazing.', 'author': 'Alice', 'timestamp': '2025-02-09 21:37:43', 'category': 'entertainment', 'sentiment': 0.79, 'keyword_mentioned': 'movie', 'message_length': 37}
+2025-02-09 21:37:43.458 | INFO     | __main__:main:167 - Sent message to Kafka topic 'project_json': {'message': 'I just loved a movie! It was amazing.', 'author': 'Alice', 'timestamp': '2025-02-09 21:37:43', 'category': 'entertainment', 'sentiment': 0.79, 'keyword_mentioned': 'movie', 'message_length': 37}
+2025-02-09 21:37:48.460 | INFO     | __main__:main:158 - {'message': 'I just found a trick! It was boring.', 'author': 'Alice', 'timestamp': '2025-02-09 21:37:48', 'category': 'other', 'sentiment': 0.13, 'keyword_mentioned': 'other', 'message_length': 36}
+2025-02-09 21:37:48.460 | INFO     | __main__:main:167 - Sent message to Kafka topic 'project_json': {'message': 'I just found a trick! It was boring.', 'author': 'Alice', 'timestamp': '2025-02-09 21:37:48', 'category': 'other', 'sentiment': 0.13, 'keyword_mentioned': 'other', 'message_length': 36}
+2025-02-09 21:37:53.480 | INFO     | __main__:main:158 - {'message': 'I just saw a trick! It was amazing.', 'author': 'Bob', 'timestamp': '2025-02-09 21:37:53', 'category': 'other', 'sentiment': 0.48, 'keyword_mentioned': 'other', 'message_length': 35}
+2025-02-09 21:37:53.480 | INFO     | __main__:main:167 - Sent message to Kafka topic 'project_json': {'message': 'I just saw a trick! It was amazing.', 'author': 'Bob', 'timestamp': '2025-02-09 21:37:53', 'category': 'other', 'sentiment': 0.48, 'keyword_mentioned': 'other', 'message_length': 35}
+2025-02-09 21:37:58.494 | INFO     | __main__:main:158 - {'message': 'I just found Python! It was weird.', 'author': 'Eve', 'timestamp': '2025-02-09 21:37:58', 'category': 'tech', 'sentiment': 0.99, 'keyword_mentioned': 'Python', 'message_length': 34}
+2025-02-09 21:37:58.494 | INFO     | __main__:main:167 - Sent message to Kafka topic 'project_json': {'message': 'I just found Python! It was weird.', 'author': 'Eve', 'timestamp': '2025-02-09 21:37:58', 'category': 'tech', 'sentiment': 0.99, 'keyword_mentioned': 'Python', 'message_length': 34}
+2025-02-09 21:38:03.499 | INFO     | __main__:main:158 - {'message': 'I just found travel! It was exciting.', 'author': 'Eve', 'timestamp': '2025-02-09 21:38:03', 'category': 'travel', 'sentiment': 0.68, 'keyword_mentioned': 'travel', 'message_length': 37}
+2025-02-09 21:38:03.499 | INFO     | __main__:main:167 - Sent message to Kafka topic 'project_json': {'message': 'I just found travel! It was exciting.', 'author': 'Eve', 'timestamp': '2025-02-09 21:38:03', 'category': 'travel', 'sentiment': 0.68, 'keyword_mentioned': 'travel', 'message_length': 37}
+2025-02-09 21:38:08.505 | INFO     | __main__:main:158 - {'message': 'I just shared recipe! It was exciting.', 'author': 'Alice', 'timestamp': '2025-02-09 21:38:08', 'category': 'food', 'sentiment': 0.63, 'keyword_mentioned': 'recipe', 'message_length': 38}
+2025-02-09 21:38:08.505 | INFO     | __main__:main:167 - Sent message to Kafka topic 'project_json': {'message': 'I just shared recipe! It was exciting.', 'author': 'Alice', 'timestamp': '2025-02-09 21:38:08', 'category': 'food', 'sentiment': 0.63, 'keyword_mentioned': 'recipe', 'message_length': 38}
+2025-02-09 21:38:13.511 | INFO     | __main__:main:158 - {'message': 'I just tried game! It was boring.', 'author': 'Charlie', 'timestamp': '2025-02-09 21:38:13', 'category': 'gaming', 'sentiment': 0.56, 'keyword_mentioned': 'game', 'message_length': 33}
+2025-02-09 21:38:13.515 | INFO     | __main__:main:167 - Sent message to Kafka topic 'project_json': {'message': 'I just tried game! It was boring.', 'author': 'Charlie', 'timestamp': '2025-02-09 21:38:13', 'category': 'gaming', 'sentiment': 0.56, 'keyword_mentioned': 'game', 'message_length': 33}
+2025-02-09 21:38:18.517 | INFO     | __main__:main:158 - {'message': 'I just found JavaScript! It was funny.', 'author': 'Eve', 'timestamp': '2025-02-09 21:38:18', 'category': 'tech', 'sentiment': 0.38, 'keyword_mentioned': 'JavaScript', 'message_length': 38}
+2025-02-09 21:38:18.520 | INFO     | __main__:main:167 - Sent message to Kafka topic 'project_json': {'message': 'I just found JavaScript! It was funny.', 'author': 'Eve', 'timestamp': '2025-02-09 21:38:18', 'category': 'tech', 'sentiment': 0.38, 'keyword_mentioned': 'JavaScript', 'message_length': 38}
+2025-02-09 21:38:23.522 | INFO     | __main__:main:158 - {'message': 'I just saw a trick! It was boring.', 'author': 'Eve', 'timestamp': '2025-02-09 21:38:23', 'category': 'other', 'sentiment': 0.05, 'keyword_mentioned': 'other', 'message_length': 34}
+2025-02-09 21:38:23.522 | INFO     | __main__:main:167 - Sent message to Kafka topic 'project_json': {'message': 'I just saw a trick! It was boring.', 'author': 'Eve', 'timestamp': '2025-02-09 21:38:23', 'category': 'other', 'sentiment': 0.05, 'keyword_mentioned': 'other', 'message_length': 34}
+2025-02-09 21:38:28.531 | INFO     | __main__:main:158 - {'message': 'I just loved travel! It was boring.', 'author': 'Bob', 'timestamp': '2025-02-09 21:38:28', 'category': 'travel', 'sentiment': 0.12, 'keyword_mentioned': 'travel', 'message_length': 35}
+2025-02-09 21:38:28.533 | INFO     | __main__:main:167 - Sent message to Kafka topic 'project_json': {'message': 'I just loved travel! It was boring.', 'author': 'Bob', 'timestamp': '2025-02-09 21:38:28', 'category': 'travel', 'sentiment': 0.12, 'keyword_mentioned': 'travel', 'message_length': 35}
+2025-02-09 21:38:33.535 | INFO     | __main__:main:158 - {'message': 'I just loved a story! It was exciting.', 'author': 'Alice', 'timestamp': '2025-02-09 21:38:33', 'category': 'other', 'sentiment': 0.16, 'keyword_mentioned': 'other', 'message_length': 38}
+2025-02-09 21:38:33.538 | INFO     | __main__:main:167 - Sent message to Kafka topic 'project_json': {'message': 'I just loved a story! It was exciting.', 'author': 'Alice', 'timestamp': '2025-02-09 21:38:33', 'category': 'other', 'sentiment': 0.16, 'keyword_mentioned': 'other', 'message_length': 38}
+2025-02-09 21:38:38.540 | INFO     | __main__:main:158 - {'message': 'I just found a trick! It was funny.', 'author': 'Eve', 'timestamp': '2025-02-09 21:38:38', 'category': 'other', 'sentiment': 0.76, 'keyword_mentioned': 'other', 'message_length': 35}
+2025-02-09 21:38:38.543 | INFO     | __main__:main:167 - Sent message to Kafka topic 'project_json': {'message': 'I just found a trick! It was funny.', 'author': 'Eve', 'timestamp': '2025-02-09 21:38:38', 'category': 'other', 'sentiment': 0.76, 'keyword_mentioned': 'other', 'message_length': 35}
+2025-02-09 21:38:43.544 | INFO     | __main__:main:158 - {'message': 'I just tried a story! It was funny.', 'author': 'Bob', 'timestamp': '2025-02-09 21:38:43', 'category': 'other', 'sentiment': 0.25, 'keyword_mentioned': 'other', 'message_length': 35}
+2025-02-09 21:38:43.545 | INFO     | __main__:main:167 - Sent message to Kafka topic 'project_json': {'message': 'I just tried a story! It was funny.', 'author': 'Bob', 'timestamp': '2025-02-09 21:38:43', 'category': 'other', 'sentiment': 0.25, 'keyword_mentioned': 'other', 'message_length': 35}
+2025-02-09 21:38:48.549 | INFO     | __main__:main:158 - {'message': 'I just tried a story! It was amazing.', 'author': 'Bob', 'timestamp': '2025-02-09 21:38:48', 'category': 'other', 'sentiment': 0.36, 'keyword_mentioned': 'other', 'message_length': 37}
+2025-02-09 21:38:48.549 | INFO     | __main__:main:167 - Sent message to Kafka topic 'project_json': {'message': 'I just tried a story! It was amazing.', 'author': 'Bob', 'timestamp': '2025-02-09 21:38:48', 'category': 'other', 'sentiment': 0.36, 'keyword_mentioned': 'other', 'message_length': 37}
+2025-02-09 21:38:53.554 | INFO     | __main__:main:158 - {'message': 'I just tried JavaScript! It was amazing.', 'author': 'Charlie', 'timestamp': '2025-02-09 21:38:53', 'category': 'tech', 'sentiment': 0.51, 'keyword_mentioned': 'JavaScript', 'message_length': 40}
+2025-02-09 21:38:53.557 | INFO     | __main__:main:167 - Sent message to Kafka topic 'project_json': {'message': 'I just tried JavaScript! It was amazing.', 'author': 'Charlie', 'timestamp': '2025-02-09 21:38:53', 'category': 'tech', 'sentiment': 0.51, 'keyword_mentioned': 'JavaScript', 'message_length': 40}
+2025-02-09 21:38:58.559 | INFO     | __main__:main:158 - {'message': 'I just tried a trick! It was weird.', 'author': 'Charlie', 'timestamp': '2025-02-09 21:38:58', 'category': 'other', 'sentiment': 0.09, 'keyword_mentioned': 'other', 'message_length': 35}
+2025-02-09 21:38:58.561 | INFO     | __main__:main:167 - Sent message to Kafka topic 'project_json': {'message': 'I just tried a trick! It was weird.', 'author': 'Charlie', 'timestamp': '2025-02-09 21:38:58', 'category': 'other', 'sentiment': 0.09, 'keyword_mentioned': 'other', 'message_length': 35}
+2025-02-09 21:39:03.564 | INFO     | __main__:main:158 - {'message': 'I just shared recipe! It was weird.', 'author': 'Charlie', 'timestamp': '2025-02-09 21:39:03', 'category': 'food', 'sentiment': 0.34, 'keyword_mentioned': 'recipe', 'message_length': 35}
+2025-02-09 21:39:03.567 | INFO     | __main__:main:167 - Sent message to Kafka topic 'project_json': {'message': 'I just shared recipe! It was weird.', 'author': 'Charlie', 'timestamp': '2025-02-09 21:39:03', 'category': 'food', 'sentiment': 0.34, 'keyword_mentioned': 'recipe', 'message_length': 35}
+2025-02-09 21:39:08.569 | INFO     | __main__:main:158 - {'message': 'I just loved a meme! It was weird.', 'author': 'Eve', 'timestamp': '2025-02-09 21:39:08', 'category': 'humor', 'sentiment': 0.37, 'keyword_mentioned': 'meme', 'message_length': 34}
+2025-02-09 21:39:08.569 | INFO     | __main__:main:167 - Sent message to Kafka topic 'project_json': {'message': 'I just loved a meme! It was weird.', 'author': 'Eve', 'timestamp': '2025-02-09 21:39:08', 'category': 'humor', 'sentiment': 0.37, 'keyword_mentioned': 'meme', 'message_length': 34}
+2025-02-09 21:39:13.575 | INFO     | __main__:main:158 - {'message': 'I just tried a meme! It was exciting.', 'author': 'Charlie', 'timestamp': '2025-02-09 21:39:13', 'category': 'humor', 'sentiment': 0.22, 'keyword_mentioned': 'meme', 'message_length': 37}
+2025-02-09 21:39:13.577 | INFO     | __main__:main:167 - Sent message to Kafka topic 'project_json': {'message': 'I just tried a meme! It was exciting.', 'author': 'Charlie', 'timestamp': '2025-02-09 21:39:13', 'category': 'humor', 'sentiment': 0.22, 'keyword_mentioned': 'meme', 'message_length': 37}
+2025-02-09 21:39:18.579 | INFO     | __main__:main:158 - {'message': 'I just loved an app! It was funny.', 'author': 'Bob', 'timestamp': '2025-02-09 21:39:18', 'category': 'other', 'sentiment': 0.69, 'keyword_mentioned': 'other', 'message_length': 34}
+2025-02-09 21:39:18.579 | INFO     | __main__:main:167 - Sent message to Kafka topic 'project_json': {'message': 'I just loved an app! It was funny.', 'author': 'Bob', 'timestamp': '2025-02-09 21:39:18', 'category': 'other', 'sentiment': 0.69, 'keyword_mentioned': 'other', 'message_length': 34}
+2025-02-09 21:39:23.584 | INFO     | __main__:main:158 - {'message': 'I just tried an app! It was boring.', 'author': 'Eve', 'timestamp': '2025-02-09 21:39:23', 'category': 'other', 'sentiment': 0.09, 'keyword_mentioned': 'other', 'message_length': 35}
+2025-02-09 21:39:23.588 | INFO     | __main__:main:167 - Sent message to Kafka topic 'project_json': {'message': 'I just tried an app! It was boring.', 'author': 'Eve', 'timestamp': '2025-02-09 21:39:23', 'category': 'other', 'sentiment': 0.09, 'keyword_mentioned': 'other', 'message_length': 35}
+2025-02-09 21:39:28.593 | INFO     | __main__:main:158 - {'message': 'I just shared travel! It was weird.', 'author': 'Charlie', 'timestamp': '2025-02-09 21:39:28', 'category': 'travel', 'sentiment': 0.73, 'keyword_mentioned': 'travel', 'message_length': 35}
+2025-02-09 21:39:28.593 | INFO     | __main__:main:167 - Sent message to Kafka topic 'project_json': {'message': 'I just shared travel! It was weird.', 'author': 'Charlie', 'timestamp': '2025-02-09 21:39:28', 'category': 'travel', 'sentiment': 0.73, 'keyword_mentioned': 'travel', 'message_length': 35}
+2025-02-09 21:39:33.598 | INFO     | __main__:main:158 - {'message': 'I just found Python! It was funny.', 'author': 'Eve', 'timestamp': '2025-02-09 21:39:33', 'category': 'tech', 'sentiment': 0.15, 'keyword_mentioned': 'Python', 'message_length': 34}
+2025-02-09 21:39:33.598 | INFO     | __main__:main:167 - Sent message to Kafka topic 'project_json': {'message': 'I just found Python! It was funny.', 'author': 'Eve', 'timestamp': '2025-02-09 21:39:33', 'category': 'tech', 'sentiment': 0.15, 'keyword_mentioned': 'Python', 'message_length': 34}
+2025-02-09 21:39:38.602 | INFO     | __main__:main:158 - {'message': 'I just saw a story! It was funny.', 'author': 'Alice', 'timestamp': '2025-02-09 21:39:38', 'category': 'other', 'sentiment': 0.32, 'keyword_mentioned': 'other', 'message_length': 33}
+2025-02-09 21:39:38.602 | INFO     | __main__:main:167 - Sent message to Kafka topic 'project_json': {'message': 'I just saw a story! It was funny.', 'author': 'Alice', 'timestamp': '2025-02-09 21:39:38', 'category': 'other', 'sentiment': 0.32, 'keyword_mentioned': 'other', 'message_length': 33}
+2025-02-09 21:39:43.609 | INFO     | __main__:main:158 - {'message': 'I just saw a trick! It was boring.', 'author': 'Bob', 'timestamp': '2025-02-09 21:39:43', 'category': 'other', 'sentiment': 0.24, 'keyword_mentioned': 'other', 'message_length': 34}
+2025-02-09 21:39:43.611 | INFO     | __main__:main:167 - Sent message to Kafka topic 'project_json': {'message': 'I just saw a trick! It was boring.', 'author': 'Bob', 'timestamp': '2025-02-09 21:39:43', 'category': 'other', 'sentiment': 0.24, 'keyword_mentioned': 'other', 'message_length': 34}
+2025-02-09 21:39:48.613 | INFO     | __main__:main:158 - {'message': 'I just found an app! It was exciting.', 'author': 'Eve', 'timestamp': '2025-02-09 21:39:48', 'category': 'other', 'sentiment': 0.97, 'keyword_mentioned': 'other', 'message_length': 37}
+2025-02-09 21:39:48.613 | INFO     | __main__:main:167 - Sent message to Kafka topic 'project_json': {'message': 'I just found an app! It was exciting.', 'author': 'Eve', 'timestamp': '2025-02-09 21:39:48', 'category': 'other', 'sentiment': 0.97, 'keyword_mentioned': 'other', 'message_length': 37}
+2025-02-09 21:39:53.618 | INFO     | __main__:main:158 - {'message': 'I just shared game! It was funny.', 'author': 'Alice', 'timestamp': '2025-02-09 21:39:53', 'category': 'gaming', 'sentiment': 0.21, 'keyword_mentioned': 'game', 'message_length': 33}
+2025-02-09 21:39:53.618 | INFO     | __main__:main:167 - Sent message to Kafka topic 'project_json': {'message': 'I just shared game! It was funny.', 'author': 'Alice', 'timestamp': '2025-02-09 21:39:53', 'category': 'gaming', 'sentiment': 0.21, 'keyword_mentioned': 'game', 'message_length': 33}
+2025-02-09 21:39:58.629 | INFO     | __main__:main:158 - {'message': 'I just saw a story! It was funny.', 'author': 'Alice', 'timestamp': '2025-02-09 21:39:58', 'category': 'other', 'sentiment': 0.63, 'keyword_mentioned': 'other', 'message_length': 33}
+2025-02-09 21:39:58.632 | INFO     | __main__:main:167 - Sent message to Kafka topic 'project_json': {'message': 'I just saw a story! It was funny.', 'author': 'Alice', 'timestamp': '2025-02-09 21:39:58', 'category': 'other', 'sentiment': 0.63, 'keyword_mentioned': 'other', 'message_length': 33}
+2025-02-09 21:40:03.635 | INFO     | __main__:main:158 - {'message': 'I just loved an app! It was exciting.', 'author': 'Alice', 'timestamp': '2025-02-09 21:40:03', 'category': 'other', 'sentiment': 0.18, 'keyword_mentioned': 'other', 'message_length': 37}
+2025-02-09 21:40:03.635 | INFO     | __main__:main:167 - Sent message to Kafka topic 'project_json': {'message': 'I just loved an app! It was exciting.', 'author': 'Alice', 'timestamp': '2025-02-09 21:40:03', 'category': 'other', 'sentiment': 0.18, 'keyword_mentioned': 'other', 'message_length': 37}
+2025-02-09 21:40:08.638 | INFO     | __main__:main:158 - {'message': 'I just saw travel! It was weird.', 'author': 'Charlie', 'timestamp': '2025-02-09 21:40:08', 'category': 'travel', 'sentiment': 0.39, 'keyword_mentioned': 'travel', 'message_length': 32}
+2025-02-09 21:40:08.638 | INFO     | __main__:main:167 - Sent message to Kafka topic 'project_json': {'message': 'I just saw travel! It was weird.', 'author': 'Charlie', 'timestamp': '2025-02-09 21:40:08', 'category': 'travel', 'sentiment': 0.39, 'keyword_mentioned': 'travel', 'message_length': 32}
+2025-02-09 21:40:13.648 | INFO     | __main__:main:158 - {'message': 'I just shared Python! It was weird.', 'author': 'Eve', 'timestamp': '2025-02-09 21:40:13', 'category': 'tech', 'sentiment': 0.06, 'keyword_mentioned': 'Python', 'message_length': 35}
+2025-02-09 21:40:13.648 | INFO     | __main__:main:167 - Sent message to Kafka topic 'project_json': {'message': 'I just shared Python! It was weird.', 'author': 'Eve', 'timestamp': '2025-02-09 21:40:13', 'category': 'tech', 'sentiment': 0.06, 'keyword_mentioned': 'Python', 'message_length': 35}
+2025-02-09 21:40:18.654 | INFO     | __main__:main:158 - {'message': 'I just found Python! It was boring.', 'author': 'Eve', 'timestamp': '2025-02-09 21:40:18', 'category': 'tech', 'sentiment': 0.88, 'keyword_mentioned': 'Python', 'message_length': 35}
+2025-02-09 21:40:18.654 | INFO     | __main__:main:167 - Sent message to Kafka topic 'project_json': {'message': 'I just found Python! It was boring.', 'author': 'Eve', 'timestamp': '2025-02-09 21:40:18', 'category': 'tech', 'sentiment': 0.88, 'keyword_mentioned': 'Python', 'message_length': 35}
+2025-02-09 21:40:23.667 | INFO     | __main__:main:158 - {'message': 'I just tried a story! It was exciting.', 'author': 'Bob', 'timestamp': '2025-02-09 21:40:23', 'category': 'other', 'sentiment': 0.89, 'keyword_mentioned': 'other', 'message_length': 38}
+2025-02-09 21:40:23.667 | INFO     | __main__:main:167 - Sent message to Kafka topic 'project_json': {'message': 'I just tried a story! It was exciting.', 'author': 'Bob', 'timestamp': '2025-02-09 21:40:23', 'category': 'other', 'sentiment': 0.89, 'keyword_mentioned': 'other', 'message_length': 38}
+2025-02-09 21:40:24.177 | INFO     | utils.utils_logger:<module>:38 - Logging to file: logs\project_log.log
+2025-02-09 21:40:24.470 | INFO     | __main__:main:277 - START consumer.
+2025-02-09 21:40:24.471 | INFO     | __main__:get_kafka_topic:51 - Kafka topic: smoker_csv
+2025-02-09 21:40:24.471 | INFO     | __main__:get_kafka_consumer_group_id:58 - Kafka consumer group id: smoker_group
+2025-02-09 21:40:24.472 | INFO     | __main__:get_rolling_window_size:71 - Rolling window size: 10
+2025-02-09 21:40:24.473 | INFO     | __main__:main:287 - Consumer: Topic 'smoker_csv' and group 'smoker_group'...
+2025-02-09 21:40:24.473 | INFO     | __main__:main:288 - Rolling window size: 10
+2025-02-09 21:40:24.474 | INFO     | utils.utils_producer:get_kafka_broker_address:50 - Kafka broker address: localhost:9092
+2025-02-09 21:40:24.474 | INFO     | utils.utils_consumer:create_kafka_consumer:44 - Creating Kafka consumer. Topic='smoker_csv' and group ID='smoker_group'.
+2025-02-09 21:40:24.587 | INFO     | utils.utils_consumer:create_kafka_consumer:59 - Kafka consumer created successfully.
+2025-02-09 21:40:24.587 | INFO     | __main__:main:295 - Polling messages from topic 'smoker_csv'...
+2025-02-09 21:40:24.738 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:51:16.284632', 'temperature': 106.0}
+2025-02-09 21:40:24.978 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:51:21.292022', 'temperature': 106.4}
+2025-02-09 21:40:25.093 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:51:26.295495', 'temperature': 106.8}
+2025-02-09 21:40:25.227 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:51:31.298072', 'temperature': 107.2}
+2025-02-09 21:40:25.377 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:51:36.305359', 'temperature': 107.6}
+2025-02-09 21:40:25.510 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:51:41.312396', 'temperature': 108.0}
+2025-02-09 21:40:25.627 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:52:05.811470', 'temperature': 70.4}
+2025-02-09 21:40:25.780 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:52:10.818506', 'temperature': 70.8}
+2025-02-09 21:40:25.909 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:52:15.823885', 'temperature': 71.2}
+2025-02-09 21:40:26.049 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:52:20.830162', 'temperature': 71.6}
+2025-02-09 21:40:26.193 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:52:25.835616', 'temperature': 72.0}
+2025-02-09 21:40:26.345 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:52:30.841581', 'temperature': 72.4}
+2025-02-09 21:40:26.566 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:52:35.848670', 'temperature': 72.8}
+2025-02-09 21:40:26.724 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:52:40.858319', 'temperature': 73.2}
+2025-02-09 21:40:26.882 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:52:45.864682', 'temperature': 73.6}
+2025-02-09 21:40:27.040 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:52:50.870718', 'temperature': 74.0}
+2025-02-09 21:40:27.229 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:52:55.874798', 'temperature': 74.4}
+2025-02-09 21:40:27.414 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:53:00.894915', 'temperature': 74.8}
+2025-02-09 21:40:27.599 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:53:05.900757', 'temperature': 75.2}
+2025-02-09 21:40:27.784 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:53:10.907012', 'temperature': 75.6}
+2025-02-09 21:40:28.000 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:53:15.911240', 'temperature': 76.0}
+2025-02-09 21:40:28.211 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:53:20.921585', 'temperature': 76.4}
+2025-02-09 21:40:28.424 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:53:25.926233', 'temperature': 76.8}
+2025-02-09 21:40:28.644 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:53:30.928943', 'temperature': 77.2}
+2025-02-09 21:40:28.671 | INFO     | __main__:main:158 - {'message': 'I just found travel! It was funny.', 'author': 'Bob', 'timestamp': '2025-02-09 21:40:28', 'category': 'travel', 'sentiment': 0.47, 'keyword_mentioned': 'travel', 'message_length': 34}
+2025-02-09 21:40:28.671 | INFO     | __main__:main:167 - Sent message to Kafka topic 'project_json': {'message': 'I just found travel! It was funny.', 'author': 'Bob', 'timestamp': '2025-02-09 21:40:28', 'category': 'travel', 'sentiment': 0.47, 'keyword_mentioned': 'travel', 'message_length': 34}
+2025-02-09 21:40:28.861 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:53:35.935303', 'temperature': 77.6}
+2025-02-09 21:40:29.078 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:53:40.938461', 'temperature': 78.0}
+2025-02-09 21:40:29.261 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:53:45.945875', 'temperature': 78.4}
+2025-02-09 21:40:29.726 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:53:50.951997', 'temperature': 78.8}
+2025-02-09 21:40:29.830 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:53:55.956053', 'temperature': 79.2}
+2025-02-09 21:40:29.931 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:54:00.962961', 'temperature': 79.6}
+2025-02-09 21:40:30.027 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:54:05.972555', 'temperature': 80.0}
+2025-02-09 21:40:30.100 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:54:10.979569', 'temperature': 80.4}
+2025-02-09 21:40:30.179 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:54:15.981983', 'temperature': 80.8}
+2025-02-09 21:40:30.279 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:54:20.985987', 'temperature': 81.2}
+2025-02-09 21:40:30.363 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:54:25.993135', 'temperature': 81.6}
+2025-02-09 21:40:30.480 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:54:31.000675', 'temperature': 82.0}
+2025-02-09 21:40:30.562 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:54:36.007276', 'temperature': 82.4}
+2025-02-09 21:40:30.663 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:54:41.015650', 'temperature': 82.8}
+2025-02-09 21:40:30.745 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:54:46.025923', 'temperature': 83.2}
+2025-02-09 21:40:30.845 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:54:51.030703', 'temperature': 83.6}
+2025-02-09 21:40:30.929 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:54:56.036834', 'temperature': 84.0}
+2025-02-09 21:40:31.028 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:55:01.045551', 'temperature': 84.4}
+2025-02-09 21:40:31.132 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:55:06.054650', 'temperature': 84.8}
+2025-02-09 21:40:31.224 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:55:11.060554', 'temperature': 85.2}
+2025-02-09 21:40:31.321 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:55:16.065461', 'temperature': 85.6}
+2025-02-09 21:40:31.414 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:55:21.071332', 'temperature': 86.0}
+2025-02-09 21:40:31.506 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:55:26.081096', 'temperature': 86.4}
+2025-02-09 21:40:31.666 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:55:31.093018', 'temperature': 86.8}
+2025-02-09 21:40:31.812 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:55:36.099709', 'temperature': 87.2}
+2025-02-09 21:40:31.936 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:55:41.106326', 'temperature': 87.6}
+2025-02-09 21:40:32.036 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:55:46.112408', 'temperature': 88.0}
+2025-02-09 21:40:32.137 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:55:51.122732', 'temperature': 88.4}
+2025-02-09 21:40:32.236 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:55:56.129723', 'temperature': 88.8}
+2025-02-09 21:40:32.321 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:56:01.137584', 'temperature': 89.2}
+2025-02-09 21:40:32.422 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:56:06.146434', 'temperature': 89.6}
+2025-02-09 21:40:32.522 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:56:11.153293', 'temperature': 90.0}
+2025-02-09 21:40:32.638 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:56:16.159597', 'temperature': 90.4}
+2025-02-09 21:40:32.769 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:56:21.167163', 'temperature': 90.8}
+2025-02-09 21:40:32.885 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:56:26.172074', 'temperature': 91.2}
+2025-02-09 21:40:33.013 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:56:31.177582', 'temperature': 91.6}
+2025-02-09 21:40:33.137 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:56:36.188196', 'temperature': 92.0}
+2025-02-09 21:40:33.278 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:56:41.192678', 'temperature': 92.4}
+2025-02-09 21:40:33.372 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:56:46.198742', 'temperature': 92.8}
+2025-02-09 21:40:33.506 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:56:51.205433', 'temperature': 93.2}
+2025-02-09 21:40:33.697 | INFO     | __main__:main:158 - {'message': 'I just tried travel! It was amazing.', 'author': 'Alice', 'timestamp': '2025-02-09 21:40:33', 'category': 'travel', 'sentiment': 0.62, 'keyword_mentioned': 'travel', 'message_length': 36}
+2025-02-09 21:40:33.713 | INFO     | __main__:main:167 - Sent message to Kafka topic 'project_json': {'message': 'I just tried travel! It was amazing.', 'author': 'Alice', 'timestamp': '2025-02-09 21:40:33', 'category': 'travel', 'sentiment': 0.62, 'keyword_mentioned': 'travel', 'message_length': 36}
+2025-02-09 21:40:33.781 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:56:56.213563', 'temperature': 93.6}
+2025-02-09 21:40:33.891 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:57:01.222731', 'temperature': 94.0}
+2025-02-09 21:40:34.022 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:57:06.230000', 'temperature': 94.4}
+2025-02-09 21:40:34.122 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:57:11.240814', 'temperature': 94.8}
+2025-02-09 21:40:34.256 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:57:16.247128', 'temperature': 95.2}
+2025-02-09 21:40:34.470 | INFO     | __main__:process_message:235 - Processed JSON message: {'timestamp': '2025-02-09T21:57:21.253873', 'temperature': 95.6}
