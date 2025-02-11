@@ -72,7 +72,7 @@ DATA_FOLDER: pathlib.Path = PROJECT_ROOT.joinpath("data")
 logger.info(f"Data folder: {DATA_FOLDER}")
 
 # Set the name of the data file
-DATA_FILE: pathlib.Path = DATA_FOLDER.joinpath("hatfield.json")
+DATA_FILE: pathlib.Path = DATA_FOLDER.joinpath("buzz.json")
 logger.info(f"Data file: {DATA_FILE}")
 
 #####################################
